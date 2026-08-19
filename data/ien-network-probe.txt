@@ -1,0 +1,58 @@
+timestamp=2026-08-19T05:04:21Z
+
+=== getent ien.edu.sa ===
+20.74.178.187   STREAM ien.edu.sa
+20.74.178.187   DGRAM  
+20.74.178.187   RAW    
+20.74.180.41    STREAM 
+20.74.180.41    DGRAM  
+20.74.180.41    RAW    
+20.74.180.47    STREAM 
+20.74.180.47    DGRAM  
+20.74.180.47    RAW    
+20.74.133.79    STREAM 
+20.74.133.79    DGRAM  
+20.74.133.79    RAW    
+20.74.182.126   STREAM 
+20.74.182.126   DGRAM  
+20.74.182.126   RAW    
+20.203.18.128   STREAM 
+20.203.18.128   DGRAM  
+20.203.18.128   RAW    
+20.203.29.129   STREAM 
+20.203.29.129   DGRAM  
+20.203.29.129   RAW    
+20.45.70.161    STREAM 
+20.45.70.161    DGRAM  
+20.45.70.161    RAW    
+20.203.29.165   STREAM 
+20.203.29.165   DGRAM  
+20.203.29.165   RAW    
+20.203.22.177   STREAM 
+20.203.22.177   DGRAM  
+20.203.22.177   RAW    
+20.203.28.184   STREAM 
+20.203.28.184   DGRAM  
+20.203.28.184   RAW    
+exit=0
+
+=== getent www.ien.edu.sa ===
+exit=2
+
+=== Google DoH ien.edu.sa ===
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"ien.edu.sa.","type":1}],"Answer":[{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.29.165"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.133.79"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.18.128"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.22.177"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.45.70.161"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.28.184"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.29.129"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.180.47"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.178.187"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.182.126"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.180.41"}],"Comment":"Response from 195.246.104.200."}
+exit=0
+
+=== Google DoH www.ien.edu.sa ===
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"www.ien.edu.sa.","type":1}],"Answer":[{"name":"www.ien.edu.sa.","type":5,"TTL":30,"data":"wwwienedusa.trafficmanager.net."}],"Authority":[{"name":"trafficmanager.net.","type":6,"TTL":30,"data":"tm1.dns-tm.com. hostmaster.trafficmanager.net. 2003080800 900 300 2419200 30"}]}
+exit=0
+
+=== HTTPS ien.edu.sa ===
+curl: (6) Could not resolve host: www.ien.edu.sa
+code=301 final=https://www.ien.edu.sa/?choice=2 remote=20.74.180.47
+exit=6
+
+=== HTTPS www.ien.edu.sa ===
+curl: (6) Could not resolve host: www.ien.edu.sa
+code=000 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ remote=
+exit=6
