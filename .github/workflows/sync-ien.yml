@@ -42,6 +42,8 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Sync official IEN links
+        env:
+          IEN_URL: https://ien.edu.sa/?choice=2#/generalactivities/
         run: npm run sync
 
       - name: Commit catalog and diagnostics
