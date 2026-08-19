@@ -1,9 +1,8 @@
 {
-  "name":"ien-activity-guide-sync",
-  "private":true,
-  "type":"module",
-  "description":"Automated index of official IEN activity guide links",
-  "engines":{"node":">=22"},
-  "scripts":{"sync":"node sync/sync-ien.mjs"},
-  "dependencies":{"playwright":"^1.55.0"}
+  "name": "ien-activity-guide-sync",
+  "private": true,
+  "type": "module",
+  "description": "Automated index of official IEN activity guide PDF links",
+  "engines": { "node": ">=22" },
+  "scripts": { "sync": "node sync/sync-ien.mjs" }
 }
