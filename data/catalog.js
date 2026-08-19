@@ -1,7 +1,7 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
-  "lastAttempt": "2026-08-19T04:54:21.468Z",
+  "lastAttempt": "2026-08-19T04:59:11.193Z",
   "lastSync": null,
-  "syncStatus": "no_files",
+  "syncStatus": "source_unreachable",
   "items": []
 };
