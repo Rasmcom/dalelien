@@ -12,7 +12,7 @@ let FIELDS = DEFAULT_FIELDS;
 let state = {stage:null,field:null,query:''};
 const $ = id => document.getElementById(id);
 const normalize = s => String(s||'').trim().toLowerCase().replace(/\s+/g,' ');
-const escapeHtml = v => String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+const escapeHtml = v => String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'}[m]));
 const escapeAttr = escapeHtml;
 
 const experienceCss=document.createElement('link');
@@ -145,11 +145,19 @@ function render(){
   window.dispatchEvent(new CustomEvent('ien:rendered',{detail:{count:sourceItems.length}}));
 }
 
-function loadMotion(){
+function loadExperience(){
   if(document.querySelector('script[data-ien-motion]')) return;
-  const script=document.createElement('script'); script.src='motion.js?v=20260819-2'; script.dataset.ienMotion='1';
-  script.onload=()=>window.dispatchEvent(new CustomEvent('ien:ready',{detail:{count:sourceItems.length}}));
-  document.body.appendChild(script);
+  const motion=document.createElement('script');
+  motion.src='motion.js?v=20260819-4'; motion.dataset.ienMotion='1';
+  motion.onload=()=>{
+    window.dispatchEvent(new CustomEvent('ien:ready',{detail:{count:sourceItems.length}}));
+    if(!document.querySelector('script[data-ien-kinetics]')){
+      const kinetics=document.createElement('script');
+      kinetics.src='kinetics.js?v=20260819-1'; kinetics.dataset.ienKinetics='1';
+      document.body.appendChild(kinetics);
+    }
+  };
+  document.body.appendChild(motion);
 }
 
 $('search').addEventListener('input',e=>{state.query=e.target.value;renderGuides();window.dispatchEvent(new CustomEvent('ien:rendered'));});
@@ -160,5 +168,5 @@ document.querySelector('.footer-source')?.remove();
   render();
   await fetchFreshCatalog();
   render();
-  loadMotion();
+  loadExperience();
 })();
