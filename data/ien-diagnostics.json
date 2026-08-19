@@ -1,0 +1,11 @@
+{
+  "attemptedAt": "2026-08-19T04:54:21.468Z",
+  "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
+  "pageUrl": "chrome-error://chromewebdata/",
+  "gotoError": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ien.edu.sa/?choice=2#/generalactivities/\nCall log:\n  - navigating to \"https://www.ien.edu.sa/?choice=2#/generalactivities/\", waiting until \"domcontentloaded\"\n",
+  "freshPdfCount": 0,
+  "candidateCount": 0,
+  "responseCount": 0,
+  "bodyText": "",
+  "responses": []
+}
