@@ -3,6 +3,43 @@
   const qsa = (s, r=document) => [...r.querySelectorAll(s)];
   const svg = (path) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${path}</svg>`;
 
+  function applyHeroReadabilityFix(){
+    if(qs('#hero-mobile-readability-fix')) return;
+    const style=document.createElement('style');
+    style.id='hero-mobile-readability-fix';
+    style.textContent=`
+      .hero-showcase .folder-back{z-index:0!important}
+      .hero-showcase .folder-front{z-index:1!important;pointer-events:none}
+      .hero-showcase .doc{z-index:3!important}
+      .hero-showcase .doc-two{z-index:5!important}
+      .hero-showcase .doc-head,.hero-showcase .doc h3,.hero-showcase .doc .line,.hero-showcase .doc-foot{position:relative;z-index:2}
+      .hero-showcase .float-card{z-index:7!important}
+      @media(max-width:620px){
+        .hero-showcase{height:390px!important;overflow:visible!important;transform:none!important;margin-top:8px!important}
+        .hero-showcase .show-glow{width:310px!important;height:310px!important}
+        .hero-showcase .show-ring{width:300px!important;height:300px!important}
+        .hero-showcase .folder-stack{width:340px!important;height:290px!important;transform:scale(.9)!important;transform-origin:center center!important}
+        .hero-showcase .folder-back{left:18px!important;right:18px!important;bottom:6px!important;height:205px!important}
+        .hero-showcase .folder-front{left:7px!important;right:7px!important;bottom:0!important;height:112px!important;opacity:.72!important}
+        .hero-showcase .doc{width:160px!important;height:218px!important;padding:15px!important;border-radius:17px!important;overflow:hidden!important}
+        .hero-showcase .doc h3{font-size:12px!important;line-height:1.65!important;margin:17px 0 8px!important;min-height:42px!important}
+        .hero-showcase .doc-head{min-height:27px!important}
+        .hero-showcase .pdf-tag{font-size:8px!important;padding:4px 6px!important}
+        .hero-showcase .doc-code{font-size:7px!important}
+        .hero-showcase .doc-one{left:4px!important;top:8px!important;transform:rotate(-8deg)!important}
+        .hero-showcase .doc-two{left:90px!important;top:-18px!important;transform:rotate(1deg)!important}
+        .hero-showcase .doc-three{right:2px!important;top:21px!important;transform:rotate(8deg)!important}
+        .hero-showcase .float-a{left:0!important;bottom:26px!important}
+        .hero-showcase .float-b{right:0!important;top:40px!important}
+      }
+      @media(max-width:390px){
+        .hero-showcase{height:365px!important}
+        .hero-showcase .folder-stack{transform:scale(.83)!important}
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
   function addScrollProgress(){
     if(qs('.scroll-progress')) return;
     const bar=document.createElement('div'); bar.className='scroll-progress'; document.body.appendChild(bar);
@@ -121,7 +158,7 @@
   }
 
   function setup(){
-    addScrollProgress(); enrichHero(); injectSignals(); injectJourney(); injectSyncStory(); updateGuideTotal(); revealMotion(); heroParallax(); activeNav();
+    applyHeroReadabilityFix(); addScrollProgress(); enrichHero(); injectSignals(); injectJourney(); injectSyncStory(); updateGuideTotal(); revealMotion(); heroParallax(); activeNav();
   }
 
   addEventListener('ien:ready',setup,{once:true});
