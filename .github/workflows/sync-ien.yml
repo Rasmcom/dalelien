@@ -41,9 +41,43 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
+      - name: Resolve IEN www endpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          if getent ahostsv4 www.ien.edu.sa >/dev/null 2>&1; then
+            echo "www.ien.edu.sa resolves normally."
+            exit 0
+          fi
+
+          mapfile -t IPS < <(getent ahostsv4 ien.edu.sa | awk '$2 == "STREAM" {print $1}' | sort -u)
+          if [ "${#IPS[@]}" -eq 0 ]; then
+            echo "No IPv4 addresses found for ien.edu.sa" >&2
+            exit 1
+          fi
+
+          SELECTED=""
+          for ip in "${IPS[@]}"; do
+            code=$(curl --resolve "www.ien.edu.sa:443:${ip}" --connect-timeout 4 --max-time 10 -sS -o /dev/null -w '%{http_code}' 'https://www.ien.edu.sa/?choice=2#/generalactivities/' || true)
+            echo "Testing ${ip}: HTTP ${code}"
+            if [[ "$code" =~ ^[23] ]]; then
+              SELECTED="$ip"
+              break
+            fi
+          done
+
+          if [ -z "$SELECTED" ]; then
+            echo "Could not find a working IEN endpoint for www.ien.edu.sa" >&2
+            exit 1
+          fi
+
+          echo "$SELECTED www.ien.edu.sa" | sudo tee -a /etc/hosts
+          echo "Mapped www.ien.edu.sa -> $SELECTED"
+          getent ahostsv4 www.ien.edu.sa
+
       - name: Sync official IEN links
         env:
-          IEN_URL: https://ien.edu.sa/?choice=2#/generalactivities/
+          IEN_URL: https://www.ien.edu.sa/?choice=2#/generalactivities/
         run: npm run sync
 
       - name: Commit catalog and diagnostics
