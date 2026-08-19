@@ -1,0 +1,48 @@
+name: IEN API probe
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    if: startsWith(github.event.issue.title, '[apiprobe]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve IEN www endpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t IPS < <(getent ahostsv4 ien.edu.sa | awk '$2 == "STREAM" {print $1}' | sort -u)
+          SELECTED=""
+          for ip in "${IPS[@]}"; do
+            code=$(curl --resolve "www.ien.edu.sa:443:${ip}" --connect-timeout 3 --max-time 8 -sS -o /dev/null -w '%{http_code}' 'https://www.ien.edu.sa/?choice=2#/generalactivities/' || true)
+            if [[ "$code" =~ ^[23] ]]; then SELECTED="$ip"; break; fi
+          done
+          [ -n "$SELECTED" ] || exit 1
+          echo "$SELECTED www.ien.edu.sa" | sudo tee -a /etc/hosts
+      - name: Fetch activity API data
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data/ien-api
+          endpoint='https://www.ien.edu.sa/api/MediaContent/GetMediaContents'
+          for category in 1 2 3 4 5; do
+            curl -fsSL --max-time 45 \
+              -H 'Content-Type: application/json;charset=UTF-8' \
+              -H 'Accept: application/json, text/plain, */*' \
+              -H 'Referer: https://www.ien.edu.sa/?choice=2#/generalactivities/' \
+              --data "{\"CategoryId\":${category},\"StageId\":\"0\"}" \
+              "$endpoint" > "data/ien-api/category-${category}.json"
+          done
+      - name: Commit API samples
+        run: |
+          git config user.name "ien-api-probe"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ien-api
+          git diff --cached --quiet || git commit -m "chore: capture IEN activity API samples"
+          git push
