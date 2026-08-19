@@ -90,7 +90,7 @@
     const files=document.getElementById('siteFileCount');
     const visits=document.getElementById('siteVisitCount');
     if(files) animateNumber(files,Number(files.dataset.target||fileCount()));
-    if(visits && visits.dataset.target) animateNumber(visits,Number(visits.dataset.target));
+    if(visits&&visits.dataset.target) animateNumber(visits,Number(visits.dataset.target));
   }
 
   function observe(){
@@ -124,8 +124,17 @@
     if(sync) sync.textContent=formatLastSync(catalog().lastSync);
   }
 
+  function storageGet(key){
+    try{return localStorage.getItem(key);}catch{return null;}
+  }
+  function storageSet(key,value){
+    try{localStorage.setItem(key,value);}catch{}
+  }
+
   function cachedVisitCount(){
-    const value=Number(localStorage.getItem(VISIT_CACHE_KEY));
+    const raw=storageGet(VISIT_CACHE_KEY);
+    if(raw===null) return null;
+    const value=Number(raw);
     return Number.isFinite(value)&&value>=0?value:null;
   }
 
@@ -134,7 +143,7 @@
     if(!element||!Number.isFinite(value)) return;
     element.dataset.target=String(value);
     element.textContent=numberFormat.format(value);
-    localStorage.setItem(VISIT_CACHE_KEY,String(value));
+    storageSet(VISIT_CACHE_KEY,String(value));
     if(visible) animateNumber(element,value);
   }
 
@@ -143,9 +152,9 @@
     const cached=cachedVisitCount();
     if(cached!==null) setVisitCount(cached);
 
-    const lastStamp=Number(localStorage.getItem(VISIT_STAMP_KEY)||0);
+    const lastStamp=Number(storageGet(VISIT_STAMP_KEY)||0);
     const shouldIncrement=!lastStamp||(Date.now()-lastStamp)>=VISIT_WINDOW;
-    const endpoint=shouldIncrement?`${COUNTER_BASE}/up`:`${COUNTER_BASE}/`;
+    const endpoint=shouldIncrement?`${COUNTER_BASE}/up`:COUNTER_BASE;
 
     try{
       const response=await fetch(endpoint,{cache:'no-store',headers:{accept:'application/json'}});
@@ -153,7 +162,7 @@
       const payload=await response.json();
       const value=Number(payload?.count??payload?.value??payload?.data?.count??payload?.data?.value);
       if(!Number.isFinite(value)) throw new Error('Counter response has no numeric value');
-      if(shouldIncrement) localStorage.setItem(VISIT_STAMP_KEY,String(Date.now()));
+      if(shouldIncrement) storageSet(VISIT_STAMP_KEY,String(Date.now()));
       setVisitCount(value);
     }catch(error){
       console.warn('Visitor counter unavailable:',error);
@@ -172,6 +181,6 @@
   }
 
   window.addEventListener('ien:rendered',refreshCatalogStats);
-  window.addEventListener('online',()=>{ if(document.getElementById('siteVisitCount')?.textContent==='—') fetchVisitorCount(); });
+  window.addEventListener('online',()=>{if(document.getElementById('siteVisitCount')?.textContent==='—') fetchVisitorCount();});
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot,{once:true}); else boot();
 })();
