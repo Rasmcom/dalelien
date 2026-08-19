@@ -1,20 +1,16 @@
 (()=>{
   'use strict';
 
-  const COUNTER_NAMESPACE='dalelien-rasmcom-2026';
-  const COUNTER_NAME='site-visits';
-  const COUNTER_BASE=`https://api.counterapi.dev/v1/${COUNTER_NAMESPACE}/${COUNTER_NAME}`;
-  const COUNTER_CDN='https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js';
-  const VISIT_STAMP_KEY='dalelien:visit-stamp:v1';
-  const VISIT_CACHE_KEY='dalelien:visit-count:v1';
-  const VISIT_WINDOW=24*60*60*1000;
+  const PAGE_VIEWS_API='https://page-views-api.ratneshc.com/api/v1';
+  const SITE_ID='dalelien.rasmcom.net';
+  const SITE_PATH='/';
   const numberFormat=new Intl.NumberFormat('ar-SA',{maximumFractionDigits:0});
   let statsRoot=null;
   let visible=false;
-  let counterClientPromise=null;
+  let visitRequestPromise=null;
 
   const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,char=>({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
   }[char]));
 
   function catalog(){ return window.IEN_CATALOG||{}; }
@@ -128,100 +124,51 @@
     if(sync) sync.textContent=formatLastSync(catalog().lastSync);
   }
 
-  function storageGet(key){
-    try{return localStorage.getItem(key);}catch{return null;}
-  }
-  function storageSet(key,value){
-    try{localStorage.setItem(key,value);}catch{}
-  }
-
-  function cachedVisitCount(){
-    const raw=storageGet(VISIT_CACHE_KEY);
-    if(raw===null) return null;
-    const value=Number(raw);
-    return Number.isFinite(value)&&value>=0?value:null;
-  }
-
-  function extractCounterValue(payload){
-    const value=Number(
-      payload?.value ?? payload?.count ?? payload?.Count ??
-      payload?.data?.value ?? payload?.data?.count ?? payload?.data?.Count
-    );
-    return Number.isFinite(value)&&value>=0?value:null;
-  }
-
   function setVisitCount(value){
     const element=document.getElementById('siteVisitCount');
-    if(!element||!Number.isFinite(value)) return;
+    if(!element||!Number.isFinite(value)||value<0) return;
     element.dataset.target=String(value);
     element.textContent=numberFormat.format(value);
-    storageSet(VISIT_CACHE_KEY,String(value));
     if(visible) animateNumber(element,value);
   }
 
-  function loadCounterClient(){
-    if(window.Counter) return Promise.resolve(window.Counter);
-    if(counterClientPromise) return counterClientPromise;
-    counterClientPromise=new Promise((resolve,reject)=>{
-      const existing=document.querySelector('script[data-counterapi-client]');
-      if(existing){
-        existing.addEventListener('load',()=>window.Counter?resolve(window.Counter):reject(new Error('CounterAPI client missing after load')),{once:true});
-        existing.addEventListener('error',()=>reject(new Error('CounterAPI client failed to load')),{once:true});
-        return;
-      }
-      const script=document.createElement('script');
-      script.src=COUNTER_CDN;
-      script.async=true;
-      script.dataset.counterapiClient='1';
-      script.onload=()=>window.Counter?resolve(window.Counter):reject(new Error('CounterAPI client missing after load'));
-      script.onerror=()=>reject(new Error('CounterAPI client failed to load'));
-      document.head.appendChild(script);
-    });
-    return counterClientPromise;
+  function apiUrl(endpoint){
+    const params=new URLSearchParams({site:SITE_ID,path:SITE_PATH});
+    return `${PAGE_VIEWS_API}/${endpoint}?${params.toString()}`;
   }
 
-  async function requestViaOfficialClient(shouldIncrement){
-    const Counter=await loadCounterClient();
-    const client=new Counter({version:'v1',namespace:COUNTER_NAMESPACE,timeout:7000});
-    const payload=shouldIncrement?await client.up(COUNTER_NAME):await client.get(COUNTER_NAME);
-    const value=extractCounterValue(payload);
-    if(value===null) throw new Error('CounterAPI client returned no numeric value');
-    return value;
-  }
-
-  async function requestViaRest(shouldIncrement){
-    const endpoint=shouldIncrement?`${COUNTER_BASE}/up`:COUNTER_BASE;
-    const response=await fetch(endpoint,{cache:'no-store',mode:'cors',headers:{accept:'application/json'}});
-    if(!response.ok) throw new Error(`Counter HTTP ${response.status}`);
+  async function readViews(){
+    const response=await fetch(apiUrl('views'),{cache:'no-store',mode:'cors',headers:{accept:'application/json'}});
+    if(!response.ok) throw new Error(`Page Views HTTP ${response.status}`);
     const payload=await response.json();
-    const value=extractCounterValue(payload);
-    if(value===null) throw new Error('Counter REST response has no numeric value');
-    return value;
+    const views=Number(payload?.views);
+    if(!Number.isFinite(views)||views<0) throw new Error('Page Views API returned no numeric count');
+    return views;
   }
 
-  async function fetchVisitorCount(){
-    inject();
-    const cached=cachedVisitCount();
-    if(cached!==null) setVisitCount(cached);
-
-    const lastStamp=Number(storageGet(VISIT_STAMP_KEY)||0);
-    const shouldIncrement=!lastStamp||(Date.now()-lastStamp)>=VISIT_WINDOW;
-
+  async function trackAndReadViews(){
     try{
-      let value;
-      try{
-        value=await requestViaOfficialClient(shouldIncrement);
-      }catch(clientError){
-        console.warn('CounterAPI browser client unavailable, using REST fallback:',clientError);
-        value=await requestViaRest(shouldIncrement);
-      }
-      if(shouldIncrement) storageSet(VISIT_STAMP_KEY,String(Date.now()));
-      setVisitCount(value);
+      const response=await fetch(apiUrl('track'),{cache:'no-store',mode:'cors',keepalive:true,headers:{accept:'application/json'}});
+      if(!response.ok) throw new Error(`Track HTTP ${response.status}`);
     }catch(error){
-      console.warn('Visitor counter unavailable:',error);
-      const element=document.getElementById('siteVisitCount');
-      if(element&&cached===null) element.textContent='غير متاح';
+      console.warn('Visit tracking request failed; reading existing count:',error);
     }
+    return readViews();
+  }
+
+  function fetchVisitorCount(){
+    inject();
+    if(visitRequestPromise) return visitRequestPromise;
+    visitRequestPromise=trackAndReadViews()
+      .then(value=>{setVisitCount(value);return value;})
+      .catch(error=>{
+        console.warn('Visitor counter unavailable:',error);
+        const element=document.getElementById('siteVisitCount');
+        if(element) element.textContent='غير متاح';
+        throw error;
+      })
+      .finally(()=>{visitRequestPromise=null;});
+    return visitRequestPromise;
   }
 
   function boot(){
@@ -230,13 +177,13 @@
       return;
     }
     refreshCatalogStats();
-    fetchVisitorCount();
+    fetchVisitorCount().catch(()=>{});
   }
 
   window.addEventListener('ien:rendered',refreshCatalogStats);
   window.addEventListener('online',()=>{
     const text=document.getElementById('siteVisitCount')?.textContent||'';
-    if(text==='غير متاح'||text==='…') fetchVisitorCount();
+    if(text==='غير متاح'||text==='…') fetchVisitorCount().catch(()=>{});
   });
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot,{once:true}); else boot();
 })();
