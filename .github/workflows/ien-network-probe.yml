@@ -18,6 +18,8 @@ jobs:
         run: |
           set +e
           mkdir -p data
+          OUT=data/ien-network-probe.txt
+          : > "$OUT"
           {
             echo "timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
             echo
@@ -39,18 +41,25 @@ jobs:
             echo
             echo "exit=$?"
             echo
-            echo '=== HTTPS ien.edu.sa ==='
-            curl -L -I --max-time 20 -sS -o /dev/null -w 'code=%{http_code} final=%{url_effective} remote=%{remote_ip}\n' 'https://ien.edu.sa/?choice=2#/generalactivities/'
-            echo "exit=$?"
-            echo
-            echo '=== HTTPS www.ien.edu.sa ==='
-            curl -L -I --max-time 20 -sS -o /dev/null -w 'code=%{http_code} final=%{url_effective} remote=%{remote_ip}\n' 'https://www.ien.edu.sa/?choice=2#/generalactivities/'
-            echo "exit=$?"
-          } > data/ien-network-probe.txt 2>&1
+            echo '=== direct www tests over apex IPv4 addresses ==='
+          } >> "$OUT" 2>&1
+
+          mapfile -t IPS < <(getent ahostsv4 ien.edu.sa | awk '$2 == "STREAM" {print $1}' | sort -u)
+          TMP=$(mktemp -d)
+          for ip in "${IPS[@]}"; do
+            (
+              result=$(curl --resolve "www.ien.edu.sa:443:${ip}" --connect-timeout 3 --max-time 8 -sS -o /dev/null -w "ip=${ip} code=%{http_code} remote=%{remote_ip} final=%{url_effective}" 'https://www.ien.edu.sa/?choice=2#/generalactivities/' 2>&1)
+              ec=$?
+              printf '%s exit=%s\n' "$result" "$ec" > "$TMP/${ip}.txt"
+            ) &
+          done
+          wait
+          cat "$TMP"/*.txt | sort >> "$OUT"
+          rm -rf "$TMP"
       - name: Commit probe
         run: |
           git config user.name "ien-network-probe"
           git config user.email "actions@users.noreply.github.com"
           git add data/ien-network-probe.txt
-          git commit -m "chore: probe IEN network"
+          git diff --cached --quiet || git commit -m "chore: probe IEN network"
           git push
