@@ -1,16 +1,20 @@
 (()=>{
   'use strict';
 
-  const COUNTER_BASE='https://api.counterapi.dev/v1/dalelien-rasmcom-2026/site-visits';
+  const COUNTER_NAMESPACE='dalelien-rasmcom-2026';
+  const COUNTER_NAME='site-visits';
+  const COUNTER_BASE=`https://api.counterapi.dev/v1/${COUNTER_NAMESPACE}/${COUNTER_NAME}`;
+  const COUNTER_CDN='https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js';
   const VISIT_STAMP_KEY='dalelien:visit-stamp:v1';
   const VISIT_CACHE_KEY='dalelien:visit-count:v1';
   const VISIT_WINDOW=24*60*60*1000;
   const numberFormat=new Intl.NumberFormat('ar-SA',{maximumFractionDigits:0});
   let statsRoot=null;
   let visible=false;
+  let counterClientPromise=null;
 
   const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,char=>({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#039;'
   }[char]));
 
   function catalog(){ return window.IEN_CATALOG||{}; }
@@ -40,7 +44,7 @@
         <div class="site-stats-shell">
           <article class="site-stat-card site-stat-visits">
             <span class="site-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-            <span class="site-stat-copy"><strong class="site-stat-value" id="siteVisitCount">—</strong><small>زيارة للموقع</small></span>
+            <span class="site-stat-copy"><strong class="site-stat-value" id="siteVisitCount">…</strong><small>زيارة للموقع</small></span>
           </article>
           <article class="site-stat-card site-stat-files">
             <span class="site-stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg></span>
@@ -138,6 +142,14 @@
     return Number.isFinite(value)&&value>=0?value:null;
   }
 
+  function extractCounterValue(payload){
+    const value=Number(
+      payload?.value ?? payload?.count ?? payload?.Count ??
+      payload?.data?.value ?? payload?.data?.count ?? payload?.data?.Count
+    );
+    return Number.isFinite(value)&&value>=0?value:null;
+  }
+
   function setVisitCount(value){
     const element=document.getElementById('siteVisitCount');
     if(!element||!Number.isFinite(value)) return;
@@ -147,6 +159,46 @@
     if(visible) animateNumber(element,value);
   }
 
+  function loadCounterClient(){
+    if(window.Counter) return Promise.resolve(window.Counter);
+    if(counterClientPromise) return counterClientPromise;
+    counterClientPromise=new Promise((resolve,reject)=>{
+      const existing=document.querySelector('script[data-counterapi-client]');
+      if(existing){
+        existing.addEventListener('load',()=>window.Counter?resolve(window.Counter):reject(new Error('CounterAPI client missing after load')),{once:true});
+        existing.addEventListener('error',()=>reject(new Error('CounterAPI client failed to load')),{once:true});
+        return;
+      }
+      const script=document.createElement('script');
+      script.src=COUNTER_CDN;
+      script.async=true;
+      script.dataset.counterapiClient='1';
+      script.onload=()=>window.Counter?resolve(window.Counter):reject(new Error('CounterAPI client missing after load'));
+      script.onerror=()=>reject(new Error('CounterAPI client failed to load'));
+      document.head.appendChild(script);
+    });
+    return counterClientPromise;
+  }
+
+  async function requestViaOfficialClient(shouldIncrement){
+    const Counter=await loadCounterClient();
+    const client=new Counter({version:'v1',namespace:COUNTER_NAMESPACE,timeout:7000});
+    const payload=shouldIncrement?await client.up(COUNTER_NAME):await client.get(COUNTER_NAME);
+    const value=extractCounterValue(payload);
+    if(value===null) throw new Error('CounterAPI client returned no numeric value');
+    return value;
+  }
+
+  async function requestViaRest(shouldIncrement){
+    const endpoint=shouldIncrement?`${COUNTER_BASE}/up`:COUNTER_BASE;
+    const response=await fetch(endpoint,{cache:'no-store',mode:'cors',headers:{accept:'application/json'}});
+    if(!response.ok) throw new Error(`Counter HTTP ${response.status}`);
+    const payload=await response.json();
+    const value=extractCounterValue(payload);
+    if(value===null) throw new Error('Counter REST response has no numeric value');
+    return value;
+  }
+
   async function fetchVisitorCount(){
     inject();
     const cached=cachedVisitCount();
@@ -154,20 +206,21 @@
 
     const lastStamp=Number(storageGet(VISIT_STAMP_KEY)||0);
     const shouldIncrement=!lastStamp||(Date.now()-lastStamp)>=VISIT_WINDOW;
-    const endpoint=shouldIncrement?`${COUNTER_BASE}/up`:COUNTER_BASE;
 
     try{
-      const response=await fetch(endpoint,{cache:'no-store',headers:{accept:'application/json'}});
-      if(!response.ok) throw new Error(`Counter HTTP ${response.status}`);
-      const payload=await response.json();
-      const value=Number(payload?.count??payload?.value??payload?.data?.count??payload?.data?.value);
-      if(!Number.isFinite(value)) throw new Error('Counter response has no numeric value');
+      let value;
+      try{
+        value=await requestViaOfficialClient(shouldIncrement);
+      }catch(clientError){
+        console.warn('CounterAPI browser client unavailable, using REST fallback:',clientError);
+        value=await requestViaRest(shouldIncrement);
+      }
       if(shouldIncrement) storageSet(VISIT_STAMP_KEY,String(Date.now()));
       setVisitCount(value);
     }catch(error){
       console.warn('Visitor counter unavailable:',error);
       const element=document.getElementById('siteVisitCount');
-      if(element&&cached===null) element.textContent='—';
+      if(element&&cached===null) element.textContent='غير متاح';
     }
   }
 
@@ -181,6 +234,9 @@
   }
 
   window.addEventListener('ien:rendered',refreshCatalogStats);
-  window.addEventListener('online',()=>{if(document.getElementById('siteVisitCount')?.textContent==='—') fetchVisitorCount();});
+  window.addEventListener('online',()=>{
+    const text=document.getElementById('siteVisitCount')?.textContent||'';
+    if(text==='غير متاح'||text==='…') fetchVisitorCount();
+  });
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot,{once:true}); else boot();
 })();
