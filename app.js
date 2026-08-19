@@ -6,15 +6,17 @@ const STAGES = [
 ];
 
 const DEFAULT_FIELDS = ['المواطنة والحياة','العلوم والتقنية','الرياضة والصحة','الثقافة والفنون','النشاط الكشفي'];
-const catalog = window.IEN_CATALOG || {items:[],lastSync:null,syncStatus:'never'};
-const sourceItems = Array.isArray(catalog.items) ? catalog.items : [];
-const discoveredFields = [...new Set(sourceItems.map(i=>String(i.field||'').trim()).filter(Boolean))];
-const FIELDS = discoveredFields.length ? discoveredFields : DEFAULT_FIELDS;
+let catalog = window.IEN_CATALOG || {items:[],lastSync:null,syncStatus:'never'};
+let sourceItems = [];
+let FIELDS = DEFAULT_FIELDS;
 let state = {stage:null,field:null,query:''};
 const $ = id => document.getElementById(id);
 const normalize = s => String(s||'').trim().toLowerCase().replace(/\s+/g,' ');
 const escapeHtml = v => String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const escapeAttr = escapeHtml;
+
+const experienceCss=document.createElement('link');
+experienceCss.rel='stylesheet'; experienceCss.href=`landing.css?v=20260819-2`; document.head.appendChild(experienceCss);
 
 const stageIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 10.5 12 6l9 4.5-9 4.5z"/><path d="M7 13.5V17c3 2 7 2 10 0v-3.5"/></svg>`;
 const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>`;
@@ -25,6 +27,29 @@ const fieldIcons = [
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 9 9c0-1-.8-1.8-1.8-1.8H17a2 2 0 0 1-2-2V6.8A3.8 3.8 0 0 0 12 3z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7.5" r="1"/></svg>`,
   `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 21V5l8-3 8 3v16"/><path d="M8 8h8M8 12h8M8 16h8"/></svg>`
 ];
+
+function refreshCatalogRefs(){
+  sourceItems = Array.isArray(catalog.items) ? catalog.items : [];
+  const discovered=[...new Set(sourceItems.map(i=>String(i.field||'').trim()).filter(Boolean))];
+  const official=DEFAULT_FIELDS.filter(f=>discovered.some(d=>normalize(d)===normalize(f)));
+  const extras=discovered.filter(d=>!DEFAULT_FIELDS.some(f=>normalize(f)===normalize(d)));
+  FIELDS=(official.length?official:DEFAULT_FIELDS).concat(extras);
+  window.IEN_CATALOG=catalog;
+  window.IEN_APP={catalog,items:sourceItems,stages:STAGES,fields:FIELDS};
+}
+
+async function fetchFreshCatalog(){
+  try{
+    const url=`data/catalog.json?ts=${Date.now()}`;
+    const res=await fetch(url,{cache:'no-store',headers:{'Cache-Control':'no-cache'}});
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const fresh=await res.json();
+    if(fresh && Array.isArray(fresh.items) && fresh.items.length){ catalog=fresh; }
+  }catch(err){
+    console.warn('Using bundled IEN catalog fallback:',err);
+  }
+  refreshCatalogRefs();
+}
 
 function stageFor(item){
   if(item.stageId) return item.stageId;
@@ -82,7 +107,7 @@ function renderGuides(){
   else $('resultMeta').textContent='اختر المرحلة والمجال لعرض الأدلة';
 
   if(!sourceItems.length){
-    $('guideGrid').innerHTML=empty('المزامنة لم تكتمل بعد','تم تجهيز الواجهة، ويجري فحص مصدر عين واستخراج روابط الأدلة الفعلية.');
+    $('guideGrid').innerHTML=empty('جارٍ تحميل أحدث الأدلة','يتم الآن قراءة أحدث نسخة متاحة من فهرس عين.');
     return;
   }
   if(!state.stage && !state.query){
@@ -103,13 +128,37 @@ function renderGuides(){
 function renderSync(){
   const stateEl=$('syncState');
   const label=$('lastSync');
-  const ok=sourceItems.length>0;
+  const ok=sourceItems.length>0 && catalog.syncStatus==='ok';
   stateEl.classList.toggle('warn',!ok);
-  if(ok && catalog.lastSync){ label.textContent=`آخر مزامنة: ${new Date(catalog.lastSync).toLocaleString('ar-SA')}`; return; }
-  if(catalog.lastAttempt){ label.textContent=`آخر محاولة: ${new Date(catalog.lastAttempt).toLocaleString('ar-SA')}`; return; }
-  label.textContent='المزامنة لم تكتمل بعد';
+  if(sourceItems.length && catalog.lastSync){
+    const when=new Date(catalog.lastSync).toLocaleString('ar-SA',{dateStyle:'short',timeStyle:'short'});
+    label.textContent=`متزامن مع عين · ${when}`;
+    return;
+  }
+  if(sourceItems.length){ label.textContent='الأدلة متاحة من آخر فهرس محفوظ'; return; }
+  label.textContent='جارٍ تحميل أحدث الأدلة';
 }
-function render(){renderStages();renderFields();renderGuides();renderSync();}
-$('search').addEventListener('input',e=>{state.query=e.target.value;renderGuides();});
+
+function render(){
+  renderStages(); renderFields(); renderGuides(); renderSync();
+  window.IEN_APP={catalog,items:sourceItems,stages:STAGES,fields:FIELDS};
+  window.dispatchEvent(new CustomEvent('ien:rendered',{detail:{count:sourceItems.length}}));
+}
+
+function loadMotion(){
+  if(document.querySelector('script[data-ien-motion]')) return;
+  const script=document.createElement('script'); script.src='motion.js?v=20260819-2'; script.dataset.ienMotion='1';
+  script.onload=()=>window.dispatchEvent(new CustomEvent('ien:ready',{detail:{count:sourceItems.length}}));
+  document.body.appendChild(script);
+}
+
+$('search').addEventListener('input',e=>{state.query=e.target.value;renderGuides();window.dispatchEvent(new CustomEvent('ien:rendered'));});
 document.querySelector('.footer-source')?.remove();
-render();
+
+(async function bootstrap(){
+  refreshCatalogRefs();
+  render();
+  await fetchFreshCatalog();
+  render();
+  loadMotion();
+})();
