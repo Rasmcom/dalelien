@@ -25,24 +25,25 @@ jobs:
           done
           [ -n "$SELECTED" ] || exit 1
           echo "$SELECTED www.ien.edu.sa" | sudo tee -a /etc/hosts
-      - name: Fetch activity API data
+      - name: Fetch stage-specific activity API data
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p data/ien-api
+          mkdir -p data/ien-api/stages
           endpoint='https://www.ien.edu.sa/api/MediaContent/GetMediaContents'
-          for category in 1 2 3 4 5; do
+          categories=(111 112 113 114 221 222 223 224 331 332 333 334 411 412 413 414 511 512 513 514)
+          for category in "${categories[@]}"; do
             curl -fsSL --max-time 45 \
               -H 'Content-Type: application/json;charset=UTF-8' \
               -H 'Accept: application/json, text/plain, */*' \
               -H 'Referer: https://www.ien.edu.sa/?choice=2#/generalactivities/' \
               --data "{\"CategoryId\":${category},\"StageId\":\"0\"}" \
-              "$endpoint" > "data/ien-api/category-${category}.json"
+              "$endpoint" > "data/ien-api/stages/category-${category}.json"
           done
       - name: Commit API samples
         run: |
           git config user.name "ien-api-probe"
           git config user.email "actions@users.noreply.github.com"
           git add data/ien-api
-          git diff --cached --quiet || git commit -m "chore: capture IEN activity API samples"
+          git diff --cached --quiet || git commit -m "chore: capture IEN stage activity API samples"
           git push
