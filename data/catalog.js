@@ -2063,12 +2063,6 @@ window.IEN_CATALOG = {
     if(!document.querySelector('script[data-ien-extracurricular]')){
       const script=document.createElement('script');script.src='extracurricular.js?v=20260819-1';script.dataset.ienExtracurricular='1';document.body.appendChild(script);
     }
-    if(!document.querySelector('link[data-ien-site-stats]')){
-      const css=document.createElement('link');css.rel='stylesheet';css.href='site-stats.css?v=20260819-1';css.dataset.ienSiteStats='1';document.head.appendChild(css);
-    }
-    if(!document.querySelector('script[data-ien-site-stats]')){
-      const script=document.createElement('script');script.src='site-stats.js?v=20260819-1';script.dataset.ienSiteStats='1';document.body.appendChild(script);
-    }
   };
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',load,{once:true}); else setTimeout(load,0);
 })();
