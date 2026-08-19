@@ -2,6 +2,9 @@
   const qs = (s, r=document) => r.querySelector(s);
   const qsa = (s, r=document) => [...r.querySelectorAll(s)];
   const svg = (path) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${path}</svg>`;
+  let cycleObserver = null;
+  let lastScrollY = window.scrollY;
+  let scrollDirection = 1;
 
   function applyHeroReadabilityFix(){
     if(qs('#hero-mobile-readability-fix')) return;
@@ -35,6 +38,34 @@
       @media(max-width:390px){
         .hero-showcase{height:365px!important}
         .hero-showcase .folder-stack{transform:scale(.83)!important}
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function applyScrollCycleStyle(){
+    if(qs('#scroll-cycle-style')) return;
+    const style=document.createElement('style');
+    style.id='scroll-cycle-style';
+    style.textContent=`
+      .cycle-reveal{
+        --cycle-y:18px;
+        opacity:.18;
+        translate:0 var(--cycle-y);
+        transition:opacity .62s ease,translate .78s cubic-bezier(.18,.82,.2,1),filter .62s ease;
+        filter:blur(2px);
+        will-change:translate,opacity,filter
+      }
+      .cycle-reveal.cycle-in{opacity:1;translate:0 0;filter:blur(0)}
+      .cycle-reveal[data-cycle-index="1"]{transition-delay:55ms}
+      .cycle-reveal[data-cycle-index="2"]{transition-delay:100ms}
+      .cycle-reveal[data-cycle-index="3"]{transition-delay:145ms}
+      .cycle-reveal[data-cycle-index="4"]{transition-delay:190ms}
+      @media(max-width:720px){
+        .cycle-reveal{--cycle-y:14px;transition-duration:.56s,.68s,.56s}
+      }
+      @media(prefers-reduced-motion:reduce){
+        .cycle-reveal,.cycle-reveal.cycle-in{opacity:1!important;translate:none!important;filter:none!important;transition:none!important}
       }
     `;
     document.head.appendChild(style);
@@ -126,11 +157,44 @@
 
   function revealMotion(){
     const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const targets=qsa('.reveal,.stage,.field,.guide');
-    if(reduced){ targets.forEach(el=>el.classList.add('revealed')); return; }
-    targets.forEach((el,i)=>{ if(!el.classList.contains('reveal')){ el.classList.add('reveal'); el.style.transitionDelay=Math.min((i%5)*45,180)+'ms'; } });
-    const io=new IntersectionObserver(entries=>entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('revealed');io.unobserve(e.target);} }),{threshold:.12,rootMargin:'0px 0px -30px'});
-    qsa('.reveal:not(.revealed)').forEach(el=>io.observe(el));
+    const targets=qsa('.reveal,.section-heading,.fields-area,.guides-area,.sync-note');
+    if(reduced){ targets.forEach(el=>{el.classList.add('revealed','cycle-in');}); return; }
+
+    const y=window.scrollY;
+    if(y!==lastScrollY){ scrollDirection=y>lastScrollY?1:-1; lastScrollY=y; }
+
+    targets.forEach((el,i)=>{
+      el.classList.add('cycle-reveal');
+      el.dataset.cycleIndex=String(i%5);
+      if(!el.style.getPropertyValue('--cycle-y')) el.style.setProperty('--cycle-y',scrollDirection>0?'18px':'-18px');
+    });
+
+    if(!cycleObserver){
+      cycleObserver=new IntersectionObserver(entries=>{
+        const now=window.scrollY;
+        if(now!==lastScrollY){ scrollDirection=now>lastScrollY?1:-1; lastScrollY=now; }
+        entries.forEach(entry=>{
+          const el=entry.target;
+          if(entry.isIntersecting){
+            el.classList.add('revealed','cycle-in');
+          }else{
+            el.classList.remove('cycle-in','revealed');
+            el.style.setProperty('--cycle-y',scrollDirection>0?'18px':'-18px');
+          }
+        });
+      },{threshold:.14,rootMargin:'-3% 0px -7% 0px'});
+      addEventListener('scroll',()=>{
+        const y=window.scrollY;
+        if(y!==lastScrollY){ scrollDirection=y>lastScrollY?1:-1; lastScrollY=y; }
+      },{passive:true});
+    }
+
+    targets.forEach(el=>{
+      if(!el.dataset.cycleObserved){
+        el.dataset.cycleObserved='1';
+        cycleObserver.observe(el);
+      }
+    });
   }
 
   function heroParallax(){
@@ -148,7 +212,9 @@
 
   function activeNav(){
     const links=qsa('.nav a[href^="#"]'); const sections=links.map(a=>qs(a.getAttribute('href'))).filter(Boolean);
-    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}}),{rootMargin:'-35% 0px -55%',threshold:0});
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{
+      if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}
+    }),{rootMargin:'-35% 0px -55%',threshold:0});
     sections.forEach(s=>io.observe(s));
   }
 
@@ -158,7 +224,17 @@
   }
 
   function setup(){
-    applyHeroReadabilityFix(); addScrollProgress(); enrichHero(); injectSignals(); injectJourney(); injectSyncStory(); updateGuideTotal(); revealMotion(); heroParallax(); activeNav();
+    applyHeroReadabilityFix();
+    applyScrollCycleStyle();
+    addScrollProgress();
+    enrichHero();
+    injectSignals();
+    injectJourney();
+    injectSyncStory();
+    updateGuideTotal();
+    revealMotion();
+    heroParallax();
+    activeNav();
   }
 
   addEventListener('ien:ready',setup,{once:true});
