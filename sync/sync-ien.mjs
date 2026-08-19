@@ -23,10 +23,27 @@ const FIELDS = [
   { id: 5, label: 'الرياضة والصحة', categories: [511, 512, 513, 514] }
 ];
 
+const EXTRACURRICULAR_FIELD = 'الفترات اللاصفية';
+const PERIODS = [
+  { id: 71, label: 'الحضور والاصطفاف الصباحي', categories: [711, 712, 713, 714] },
+  { id: 72, label: 'الروتين اليومي', categories: [721, 722, 723, 724] },
+  { id: 73, label: 'صلاة الظهر والمناوبة', categories: [731, 732, 733, 734] }
+];
+
 const CATEGORY_MAP = new Map();
 for (const field of FIELDS) {
   field.categories.forEach((categoryId, index) => {
-    CATEGORY_MAP.set(categoryId, { field, stage: STAGES[index] });
+    CATEGORY_MAP.set(categoryId, { kind: 'field', field, stage: STAGES[index], period: null });
+  });
+}
+for (const period of PERIODS) {
+  period.categories.forEach((categoryId, index) => {
+    CATEGORY_MAP.set(categoryId, {
+      kind: 'period',
+      field: { id: 7, label: EXTRACURRICULAR_FIELD },
+      stage: STAGES[index],
+      period
+    });
   });
 }
 
@@ -76,10 +93,13 @@ function normalizeItem(raw, categoryId) {
   return {
     sourceId: raw?.id ?? null,
     categoryId,
+    contentType: meta.kind,
     title,
     stage: meta.stage.label,
     stageId: meta.stage.id,
     field: meta.field.label,
+    period: meta.period?.label || null,
+    periodId: meta.period?.id || null,
     pdfUrl,
     thumbnail: clean(raw?.thumbnail) || null,
     sourceUrl: `https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/${categoryId}`
@@ -123,8 +143,16 @@ const items = merged.filter(item => {
 }).sort((a, b) => {
   const stageOrder = STAGES.findIndex(stage => stage.id === a.stageId) - STAGES.findIndex(stage => stage.id === b.stageId);
   if (stageOrder) return stageOrder;
-  const fieldOrder = FIELDS.findIndex(field => field.label === a.field) - FIELDS.findIndex(field => field.label === b.field);
-  if (fieldOrder) return fieldOrder;
+
+  const fieldIndexA = a.field === EXTRACURRICULAR_FIELD ? FIELDS.length : FIELDS.findIndex(field => field.label === a.field);
+  const fieldIndexB = b.field === EXTRACURRICULAR_FIELD ? FIELDS.length : FIELDS.findIndex(field => field.label === b.field);
+  if (fieldIndexA !== fieldIndexB) return fieldIndexA - fieldIndexB;
+
+  if (a.field === EXTRACURRICULAR_FIELD && b.field === EXTRACURRICULAR_FIELD) {
+    const periodOrder = PERIODS.findIndex(period => period.label === a.period) - PERIODS.findIndex(period => period.label === b.period);
+    if (periodOrder) return periodOrder;
+  }
+
   return a.title.localeCompare(b.title, 'ar');
 });
 
@@ -139,6 +167,7 @@ const output = {
   categoryCount: CATEGORY_MAP.size,
   syncedCategoryCount: succeeded.length,
   failedCategoryCount: failed.length,
+  extracurricularPeriods: PERIODS.map(({ id, label }) => ({ id, label })),
   items
 };
 
@@ -148,13 +177,16 @@ const diagnostics = {
   api: API_URL,
   status: output.syncStatus,
   totalPdfGuides: items.length,
+  extracurricularPdfGuides: items.filter(item => item.field === EXTRACURRICULAR_FIELD).length,
   succeeded,
   failed
 };
 
+const addonLoader = `\n(function(){\n  const load=()=>{\n    if(!document.querySelector('link[data-ien-extracurricular]')){\n      const css=document.createElement('link');css.rel='stylesheet';css.href='extracurricular.css?v=20260819-1';css.dataset.ienExtracurricular='1';document.head.appendChild(css);\n    }\n    if(!document.querySelector('script[data-ien-extracurricular]')){\n      const script=document.createElement('script');script.src='extracurricular.js?v=20260819-1';script.dataset.ienExtracurricular='1';document.body.appendChild(script);\n    }\n  };\n  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',load,{once:true}); else setTimeout(load,0);\n})();\n`;
+
 await fs.mkdir(path.join(ROOT, 'data'), { recursive: true });
 await fs.writeFile(path.join(ROOT, 'data', 'catalog.json'), JSON.stringify(output, null, 2), 'utf8');
-await fs.writeFile(path.join(ROOT, 'data', 'catalog.js'), `window.IEN_CATALOG = ${JSON.stringify(output, null, 2)};\n`, 'utf8');
+await fs.writeFile(path.join(ROOT, 'data', 'catalog.js'), `window.IEN_CATALOG = ${JSON.stringify(output, null, 2)};\n${addonLoader}`, 'utf8');
 await fs.writeFile(path.join(ROOT, 'data', 'ien-diagnostics.json'), JSON.stringify(diagnostics, null, 2), 'utf8');
 
 console.log(`IEN API sync complete: ${items.length} PDF guides; categories ${succeeded.length}/${CATEGORY_MAP.size}.`);
