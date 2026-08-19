@@ -1,5 +1,7 @@
 window.IEN_CATALOG = {
+  source: "https://www.ien.edu.sa/?choice=2#/generalactivities/",
+  lastAttempt: null,
   lastSync: null,
-  source: "https://www.ien.edu.sa/?choice=2#/studentactivities",
+  syncStatus: "never",
   items: []
 };
