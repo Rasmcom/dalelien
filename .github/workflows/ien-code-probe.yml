@@ -25,17 +25,20 @@ jobs:
           done
           [ -n "$SELECTED" ] || exit 1
           echo "$SELECTED www.ien.edu.sa" | sudo tee -a /etc/hosts
-      - name: Fetch IEN activity controllers
+      - name: Fetch IEN activity controllers and services
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p data/ien-code
-          base='https://www.ien.edu.sa/app/Portal/generalactivities'
-          curl -fsSL "$base/generalactivities.module.js" -o data/ien-code/generalactivities.module.js
-          curl -fsSL "$base/generalactivities.config.js" -o data/ien-code/generalactivities.config.js
-          curl -fsSL "$base/studentactivities.controller.js" -o data/ien-code/studentactivities.controller.js
-          curl -fsSL "$base/generalactivitiespage.controller.js" -o data/ien-code/generalactivitiespage.controller.js
-          curl -fsSL "$base/generalactivitiespackages.controller.js" -o data/ien-code/generalactivitiespackages.controller.js
+          activities='https://www.ien.edu.sa/app/Portal/generalactivities'
+          media='https://www.ien.edu.sa/app/Portal/mediacontent'
+          curl -fsSL "$activities/generalactivities.module.js" -o data/ien-code/generalactivities.module.js
+          curl -fsSL "$activities/generalactivities.config.js" -o data/ien-code/generalactivities.config.js
+          curl -fsSL "$activities/studentactivities.controller.js" -o data/ien-code/studentactivities.controller.js
+          curl -fsSL "$activities/generalactivitiespage.controller.js" -o data/ien-code/generalactivitiespage.controller.js
+          curl -fsSL "$activities/generalactivitiespackages.controller.js" -o data/ien-code/generalactivitiespackages.controller.js
+          curl -fsSL "$media/mediacontent.service.js" -o data/ien-code/mediacontent.service.js
+          curl -fsSL "$media/mediacontent.config.js" -o data/ien-code/mediacontent.config.js
       - name: Commit controller files
         run: |
           git config user.name "ien-code-probe"
