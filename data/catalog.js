@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-08-19T10:50:10.867Z",
-  "lastSync": "2026-08-19T10:50:10.867Z",
+  "lastAttempt": "2026-08-19T16:55:27.889Z",
+  "lastSync": "2026-08-19T16:55:27.889Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -481,6 +481,20 @@ window.IEN_CATALOG = {
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12652,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "من النداء إلى الأداء",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-5weekpraying-731.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
@@ -989,6 +1003,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
     {
+      "sourceId": 12653,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "من النداء إلى الأداء",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-5weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
       "sourceId": 12624,
       "categoryId": 732,
       "contentType": "period",
@@ -1297,6 +1325,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
     },
     {
+      "sourceId": 12289,
+      "categoryId": 413,
+      "contentType": "field",
+      "title": "من هدي القرآن والسنة",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/fromquranandsunnah-413.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
+    },
+    {
       "sourceId": 12290,
       "categoryId": 413,
       "contentType": "field",
@@ -1461,6 +1503,20 @@ window.IEN_CATALOG = {
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12654,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "من النداء إلى الأداء",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-5weekpraying-733.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
@@ -1731,6 +1787,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
     },
     {
+      "sourceId": 12293,
+      "categoryId": 414,
+      "contentType": "field",
+      "title": "درب الإحسان",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/pathofbenevolence-414.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
+    },
+    {
       "sourceId": 12294,
       "categoryId": 414,
       "contentType": "field",
@@ -1755,6 +1825,20 @@ window.IEN_CATALOG = {
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scoutarms-414.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
+    },
+    {
+      "sourceId": 12296,
+      "categoryId": 414,
+      "contentType": "field",
+      "title": "مهرجان الأفلام الكشفية الصحية",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/healthscoutingfilmfestival-414.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
     },
@@ -1927,6 +2011,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
     {
+      "sourceId": 12655,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "من النداء إلى الأداء",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-5weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
       "sourceId": 12626,
       "categoryId": 734,
       "contentType": "period",
@@ -1964,6 +2062,12 @@ window.IEN_CATALOG = {
     }
     if(!document.querySelector('script[data-ien-extracurricular]')){
       const script=document.createElement('script');script.src='extracurricular.js?v=20260819-1';script.dataset.ienExtracurricular='1';document.body.appendChild(script);
+    }
+    if(!document.querySelector('link[data-ien-site-stats]')){
+      const css=document.createElement('link');css.rel='stylesheet';css.href='site-stats.css?v=20260819-1';css.dataset.ienSiteStats='1';document.head.appendChild(css);
+    }
+    if(!document.querySelector('script[data-ien-site-stats]')){
+      const script=document.createElement('script');script.src='site-stats.js?v=20260819-1';script.dataset.ienSiteStats='1';document.body.appendChild(script);
     }
   };
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',load,{once:true}); else setTimeout(load,0);
