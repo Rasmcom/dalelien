@@ -1,22 +1,110 @@
 {
-  "attemptedAt": "2026-08-19T04:59:11.193Z",
+  "attemptedAt": "2026-08-19T05:22:39.942Z",
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
-  "finalPageUrl": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
-  "opened": false,
-  "dnsFallbackIps": [],
-  "selectedFallbackIp": null,
-  "gotoAttempts": [
+  "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
+  "status": "ok",
+  "totalPdfGuides": 109,
+  "succeeded": [
     {
-      "ip": null,
-      "ok": false,
-      "status": null,
-      "finalUrl": "about:blank",
-      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ien.edu.sa/?choice=2#/generalactivities/\nCall log:\n  - navigating to \"https://www.ien.edu.sa/?choice=2#/generalactivities/\", waiting until \"domcontentloaded\"\n"
+      "categoryId": 111,
+      "rawCount": 5,
+      "pdfCount": 5
+    },
+    {
+      "categoryId": 112,
+      "rawCount": 5,
+      "pdfCount": 5
+    },
+    {
+      "categoryId": 113,
+      "rawCount": 5,
+      "pdfCount": 5
+    },
+    {
+      "categoryId": 114,
+      "rawCount": 5,
+      "pdfCount": 5
+    },
+    {
+      "categoryId": 221,
+      "rawCount": 2,
+      "pdfCount": 2
+    },
+    {
+      "categoryId": 222,
+      "rawCount": 2,
+      "pdfCount": 2
+    },
+    {
+      "categoryId": 223,
+      "rawCount": 2,
+      "pdfCount": 2
+    },
+    {
+      "categoryId": 224,
+      "rawCount": 2,
+      "pdfCount": 2
+    },
+    {
+      "categoryId": 331,
+      "rawCount": 8,
+      "pdfCount": 8
+    },
+    {
+      "categoryId": 332,
+      "rawCount": 8,
+      "pdfCount": 8
+    },
+    {
+      "categoryId": 333,
+      "rawCount": 8,
+      "pdfCount": 8
+    },
+    {
+      "categoryId": 334,
+      "rawCount": 8,
+      "pdfCount": 8
+    },
+    {
+      "categoryId": 411,
+      "rawCount": 7,
+      "pdfCount": 7
+    },
+    {
+      "categoryId": 412,
+      "rawCount": 7,
+      "pdfCount": 7
+    },
+    {
+      "categoryId": 413,
+      "rawCount": 6,
+      "pdfCount": 6
+    },
+    {
+      "categoryId": 414,
+      "rawCount": 5,
+      "pdfCount": 5
+    },
+    {
+      "categoryId": 511,
+      "rawCount": 6,
+      "pdfCount": 6
+    },
+    {
+      "categoryId": 512,
+      "rawCount": 6,
+      "pdfCount": 6
+    },
+    {
+      "categoryId": 513,
+      "rawCount": 6,
+      "pdfCount": 6
+    },
+    {
+      "categoryId": 514,
+      "rawCount": 6,
+      "pdfCount": 6
     }
   ],
-  "freshPdfCount": 0,
-  "candidateCount": 0,
-  "responseCount": 0,
-  "bodyText": "",
-  "responses": []
+  "failed": []
 }
