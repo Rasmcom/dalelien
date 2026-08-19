@@ -1,0 +1,7 @@
+{
+  "name":"ien-activity-guide-sync",
+  "private":true,
+  "type":"module",
+  "scripts":{"sync":"node sync/sync-ien.mjs"},
+  "dependencies":{"playwright":"^1.55.0"}
+}
