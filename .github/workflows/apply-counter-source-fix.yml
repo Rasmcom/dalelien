@@ -1,0 +1,43 @@
+name: Apply visitor counter source fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/apply-counter-source-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Keep one counter loader and bust cache
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          index = Path('index.html')
+          s = index.read_text(encoding='utf-8')
+          old = '<script src="site-stats.js?v=20260819-2"></script>'
+          new = '<script src="site-stats.js?v=20260819-3"></script>'
+          assert old in s, 'site-stats v2 loader not found in index.html'
+          index.write_text(s.replace(old, new, 1), encoding='utf-8')
+
+          sync = Path('sync/sync-ien.mjs')
+          s = sync.read_text(encoding='utf-8')
+          start = s.index('const addonLoader = `')
+          end = s.index('\n\nawait fs.mkdir', start)
+          replacement = '''const addonLoader = `\\n(function(){\\n  const load=()=>{\\n    if(!document.querySelector('link[data-ien-extracurricular]')){\\n      const css=document.createElement('link');css.rel='stylesheet';css.href='extracurricular.css?v=20260819-1';css.dataset.ienExtracurricular='1';document.head.appendChild(css);\\n    }\\n    if(!document.querySelector('script[data-ien-extracurricular]')){\\n      const script=document.createElement('script');script.src='extracurricular.js?v=20260819-1';script.dataset.ienExtracurricular='1';document.body.appendChild(script);\\n    }\\n  };\\n  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',load,{once:true}); else setTimeout(load,0);\\n})();\\n`;'''
+          sync.write_text(s[:start] + replacement + s[end:], encoding='utf-8')
+          PY
+      - name: Commit source fix
+        run: |
+          git config user.name "counter-fix-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html sync/sync-ien.mjs
+          git diff --cached --quiet || git commit -m "fix: use one resilient visitor counter loader"
+          git push
