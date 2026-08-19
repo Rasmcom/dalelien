@@ -1,9 +1,10 @@
 {
-  "attemptedAt": "2026-08-19T05:42:22.619Z",
+  "attemptedAt": "2026-08-19T10:48:35.119Z",
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
   "status": "ok",
-  "totalPdfGuides": 109,
+  "totalPdfGuides": 138,
+  "extracurricularPdfGuides": 29,
   "succeeded": [
     {
       "categoryId": 111,
@@ -104,6 +105,66 @@
       "categoryId": 514,
       "rawCount": 6,
       "pdfCount": 6
+    },
+    {
+      "categoryId": 711,
+      "rawCount": 3,
+      "pdfCount": 3
+    },
+    {
+      "categoryId": 712,
+      "rawCount": 4,
+      "pdfCount": 4
+    },
+    {
+      "categoryId": 713,
+      "rawCount": 3,
+      "pdfCount": 3
+    },
+    {
+      "categoryId": 714,
+      "rawCount": 3,
+      "pdfCount": 3
+    },
+    {
+      "categoryId": 721,
+      "rawCount": 0,
+      "pdfCount": 0
+    },
+    {
+      "categoryId": 722,
+      "rawCount": 0,
+      "pdfCount": 0
+    },
+    {
+      "categoryId": 723,
+      "rawCount": 0,
+      "pdfCount": 0
+    },
+    {
+      "categoryId": 724,
+      "rawCount": 0,
+      "pdfCount": 0
+    },
+    {
+      "categoryId": 731,
+      "rawCount": 4,
+      "pdfCount": 4
+    },
+    {
+      "categoryId": 732,
+      "rawCount": 4,
+      "pdfCount": 4
+    },
+    {
+      "categoryId": 733,
+      "rawCount": 4,
+      "pdfCount": 4
+    },
+    {
+      "categoryId": 734,
+      "rawCount": 4,
+      "pdfCount": 4
     }
   ],
   "failed": []

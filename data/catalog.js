@@ -1,20 +1,37 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-08-19T05:42:22.619Z",
-  "lastSync": "2026-08-19T05:42:22.619Z",
+  "lastAttempt": "2026-08-19T10:48:35.119Z",
+  "lastSync": "2026-08-19T10:48:35.119Z",
   "syncStatus": "ok",
-  "categoryCount": 20,
-  "syncedCategoryCount": 20,
+  "categoryCount": 32,
+  "syncedCategoryCount": 32,
   "failedCategoryCount": 0,
+  "extracurricularPeriods": [
+    {
+      "id": 71,
+      "label": "الحضور والاصطفاف الصباحي"
+    },
+    {
+      "id": 72,
+      "label": "الروتين اليومي"
+    },
+    {
+      "id": 73,
+      "label": "صلاة الظهر والمناوبة"
+    }
+  ],
   "items": [
     {
       "sourceId": 11035,
       "categoryId": 111,
+      "contentType": "field",
       "title": "التصاميم العلمية التقنية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
@@ -22,10 +39,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11030,
       "categoryId": 111,
+      "contentType": "field",
       "title": "الذكاء الاصطناعي",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-artificialintelligence-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
@@ -33,10 +53,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11036,
       "categoryId": 111,
+      "contentType": "field",
       "title": "إنترنت الأشياء",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
@@ -44,10 +67,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11038,
       "categoryId": 111,
+      "contentType": "field",
       "title": "رواد فضاء المستقبل",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-futureastronauts-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
@@ -55,10 +81,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11034,
       "categoryId": 111,
+      "contentType": "field",
       "title": "مدن المستقبل",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-citiesofthefuture-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
@@ -66,10 +95,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11014,
       "categoryId": 221,
+      "contentType": "field",
       "title": "التطوع الطلابي",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering221.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/221"
@@ -77,10 +109,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11023,
       "categoryId": 221,
+      "contentType": "field",
       "title": "مهارات طموحة",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-ambitiousskills221.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/221"
@@ -88,10 +123,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11222,
       "categoryId": 331,
+      "contentType": "field",
       "title": "الأزياء السعودية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/saudifashion-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -99,10 +137,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11187,
       "categoryId": 331,
+      "contentType": "field",
       "title": "البرنامج الموسيقي (الأناشيد الوطنية)",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/nationalanthems-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -110,10 +151,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11212,
       "categoryId": 331,
+      "contentType": "field",
       "title": "الثقافة الإعلامية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mediaculture-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -121,10 +165,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12314,
       "categoryId": 331,
+      "contentType": "field",
       "title": "الفن السابع (السينما)",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/cinemaseventhart-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -132,10 +179,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11186,
       "categoryId": 331,
+      "contentType": "field",
       "title": "الفنون المسرحية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/theatricalarts-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -143,10 +193,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11190,
       "categoryId": 331,
+      "contentType": "field",
       "title": "تصاميم تراثية معاصرة",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/heritagedesigns-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -154,10 +207,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12266,
       "categoryId": 331,
+      "contentType": "field",
       "title": "حدائق الفن",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/artgardens-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -165,10 +221,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12334,
       "categoryId": 331,
+      "contentType": "field",
       "title": "حكايات مرئية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/visualtales-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
@@ -176,10 +235,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12273,
       "categoryId": 411,
+      "contentType": "field",
       "title": "براعم المجتمع والبيئة",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/communityenvironmentalsprouts-411.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/411"
@@ -187,10 +249,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12276,
       "categoryId": 411,
+      "contentType": "field",
       "title": "براعم النور",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/budsoflight-411.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/411"
@@ -198,10 +263,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12274,
       "categoryId": 411,
+      "contentType": "field",
       "title": "بصمتي الكشفية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/myscoutingfingerprint-411.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/411"
@@ -209,10 +277,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12270,
       "categoryId": 411,
+      "contentType": "field",
       "title": "بوصلة الاكتشاف",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/discoverycompass-411.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/411"
@@ -220,10 +291,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12271,
       "categoryId": 411,
+      "contentType": "field",
       "title": "خيمتي الجميلة",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mybeautifultent-411.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/411"
@@ -231,10 +305,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12272,
       "categoryId": 411,
+      "contentType": "field",
       "title": "عاداتي الصحية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/Myhealthyhabits-411.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/411"
@@ -242,10 +319,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12275,
       "categoryId": 411,
+      "contentType": "field",
       "title": "مهاراتي وكشفيتي",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/myskillsandscouting-411.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/411"
@@ -253,10 +333,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11063,
       "categoryId": 511,
+      "contentType": "field",
       "title": "مهارات الأولمبياد الرياضي",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/olympicsportsskills511.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
@@ -264,10 +347,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11064,
       "categoryId": 511,
+      "contentType": "field",
       "title": "مهارات الرياضات الإلكترونية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills511.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
@@ -275,10 +361,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11060,
       "categoryId": 511,
+      "contentType": "field",
       "title": "مهارات الرياضات الجماعية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-teamsportsskills511.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
@@ -286,10 +375,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11065,
       "categoryId": 511,
+      "contentType": "field",
       "title": "مهارات الرياضات الذهنية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mentalsportsskills511.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
@@ -297,10 +389,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11061,
       "categoryId": 511,
+      "contentType": "field",
       "title": "مهارات الرياضات الفردية",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-individualsportsskills511.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
@@ -308,21 +403,125 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11062,
       "categoryId": 511,
+      "contentType": "field",
       "title": "مهارات رياضات الدفاع عن النفس",
       "stage": "الأولية",
       "stageId": "lower",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/selfdefensesportsskills511.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
     },
     {
+      "sourceId": 12607,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - حياكم",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12633,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثالث - سفراء الاستدامة",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12611,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - رحلة نجاح",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12641,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "الوضوء مفتاح القبول",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12627,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "طهارة ونقاء",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12623,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "نداء الرحمن",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12645,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "وضوئي صحيح",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
       "sourceId": 11040,
       "categoryId": 112,
+      "contentType": "field",
       "title": "التصاميم العلمية التقنية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-112.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
@@ -330,10 +529,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11031,
       "categoryId": 112,
+      "contentType": "field",
       "title": "الذكاء الاصطناعي",
       "stage": "العليا",
       "stageId": "upper",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-artificialintelligence-112.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
@@ -341,10 +543,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11041,
       "categoryId": 112,
+      "contentType": "field",
       "title": "إنترنت الأشياء",
       "stage": "العليا",
       "stageId": "upper",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-112.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
@@ -352,10 +557,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11043,
       "categoryId": 112,
+      "contentType": "field",
       "title": "رواد فضاء المستقبل",
       "stage": "العليا",
       "stageId": "upper",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-futureastronauts-112.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
@@ -363,10 +571,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11039,
       "categoryId": 112,
+      "contentType": "field",
       "title": "مدن المستقبل",
       "stage": "العليا",
       "stageId": "upper",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-citiesofthefuture-112.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
@@ -374,10 +585,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11024,
       "categoryId": 222,
+      "contentType": "field",
       "title": "التطوع الطلابي",
       "stage": "العليا",
       "stageId": "upper",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering222.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
@@ -385,10 +599,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11025,
       "categoryId": 222,
+      "contentType": "field",
       "title": "مهارات طموحة",
       "stage": "العليا",
       "stageId": "upper",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-ambitiousskills222.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
@@ -396,10 +613,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11223,
       "categoryId": 332,
+      "contentType": "field",
       "title": "الأزياء السعودية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/saudifashion-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -407,10 +627,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11194,
       "categoryId": 332,
+      "contentType": "field",
       "title": "البرنامج الموسيقي (الأناشيد الوطنية)",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/nationalanthems-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -418,10 +641,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11213,
       "categoryId": 332,
+      "contentType": "field",
       "title": "الثقافة الإعلامية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mediaculture-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -429,10 +655,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12315,
       "categoryId": 332,
+      "contentType": "field",
       "title": "الفن السابع (السينما)",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/cinemaseventhart-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -440,10 +669,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11191,
       "categoryId": 332,
+      "contentType": "field",
       "title": "الفنون المسرحية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/theatricalarts-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -451,10 +683,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11195,
       "categoryId": 332,
+      "contentType": "field",
       "title": "تصاميم تراثية معاصرة",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/heritagedesigns-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -462,10 +697,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12267,
       "categoryId": 332,
+      "contentType": "field",
       "title": "حدائق الفن",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/artgardens-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -473,10 +711,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12335,
       "categoryId": 332,
+      "contentType": "field",
       "title": "حكايات مرئية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/visualtales-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
@@ -484,10 +725,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12277,
       "categoryId": 412,
+      "contentType": "field",
       "title": "أشارك مجتمعي وأزرع بيئتي",
       "stage": "العليا",
       "stageId": "upper",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/engagecommunitycultivateenvironment-412.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
@@ -495,10 +739,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12278,
       "categoryId": 412,
+      "contentType": "field",
       "title": "خشبة وحبل",
       "stage": "العليا",
       "stageId": "upper",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/woodandrope-412.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
@@ -506,10 +753,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12279,
       "categoryId": 412,
+      "contentType": "field",
       "title": "خيمة التجارب المسلية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/funexperimentstent-412.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
@@ -517,10 +767,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12280,
       "categoryId": 412,
+      "contentType": "field",
       "title": "صافرة واصطفاف",
       "stage": "العليا",
       "stageId": "upper",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/whistleandlineup-412.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
@@ -528,10 +781,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12281,
       "categoryId": 412,
+      "contentType": "field",
       "title": "طبقي الكشفي",
       "stage": "العليا",
       "stageId": "upper",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/myscoutfood-412.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
@@ -539,10 +795,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12282,
       "categoryId": 412,
+      "contentType": "field",
       "title": "كنوز الصغار",
       "stage": "العليا",
       "stageId": "upper",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/littletreasures-412.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
@@ -550,10 +809,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12283,
       "categoryId": 412,
+      "contentType": "field",
       "title": "وطني في قلبي",
       "stage": "العليا",
       "stageId": "upper",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mycountrymyheart-412.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
@@ -561,10 +823,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11069,
       "categoryId": 512,
+      "contentType": "field",
       "title": "مهارات الأولمبياد الرياضي",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/olympicsportsskills512.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
@@ -572,10 +837,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11070,
       "categoryId": 512,
+      "contentType": "field",
       "title": "مهارات الرياضات الإلكترونية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills512.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
@@ -583,10 +851,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11066,
       "categoryId": 512,
+      "contentType": "field",
       "title": "مهارات الرياضات الجماعية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-teamsportsskills512.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
@@ -594,10 +865,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11071,
       "categoryId": 512,
+      "contentType": "field",
       "title": "مهارات الرياضات الذهنية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mentalsportsskills512.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
@@ -605,10 +879,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11067,
       "categoryId": 512,
+      "contentType": "field",
       "title": "مهارات الرياضات الفردية",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-individualsportsskills512.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
@@ -616,21 +893,139 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11068,
       "categoryId": 512,
+      "contentType": "field",
       "title": "مهارات رياضات الدفاع عن النفس",
       "stage": "العليا",
       "stageId": "upper",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/selfdefensesportsskills512.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
     },
     {
+      "sourceId": 12608,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - حياكم",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12616,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثالث - سفراء الاستدامة",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12636,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثالث - سفراء الاستدامة",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12651,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الرابع - صحتي مسؤوليتي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12642,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "الوضوء مفتاح القبول",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12628,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "طهارة ونقاء",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12624,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "نداء الرحمن",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12646,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "وضوئي صحيح",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
       "sourceId": 11045,
       "categoryId": 113,
+      "contentType": "field",
       "title": "التصاميم العلمية التقنية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-113.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
@@ -638,10 +1033,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11032,
       "categoryId": 113,
+      "contentType": "field",
       "title": "الذكاء الاصطناعي",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-artificialintelligence-113.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
@@ -649,10 +1047,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11046,
       "categoryId": 113,
+      "contentType": "field",
       "title": "إنترنت الأشياء",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-113.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
@@ -660,10 +1061,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11048,
       "categoryId": 113,
+      "contentType": "field",
       "title": "رواد فضاء المستقبل",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-futureastronauts-113.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
@@ -671,10 +1075,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11044,
       "categoryId": 113,
+      "contentType": "field",
       "title": "مدن المستقبل",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-citiesofthefuture-113.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
@@ -682,10 +1089,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11026,
       "categoryId": 223,
+      "contentType": "field",
       "title": "التطوع الطلابي",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering223.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
@@ -693,10 +1103,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11027,
       "categoryId": 223,
+      "contentType": "field",
       "title": "مهارات طموحة",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-ambitiousskills223.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
@@ -704,10 +1117,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11224,
       "categoryId": 333,
+      "contentType": "field",
       "title": "الأزياء السعودية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/saudifashion-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -715,10 +1131,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11188,
       "categoryId": 333,
+      "contentType": "field",
       "title": "البرنامج الموسيقي (الأناشيد الوطنية)",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/nationalanthems-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -726,10 +1145,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11214,
       "categoryId": 333,
+      "contentType": "field",
       "title": "الثقافة الإعلامية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mediaculture-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -737,10 +1159,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12316,
       "categoryId": 333,
+      "contentType": "field",
       "title": "الفن السابع (السينما)",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/cinemaseventhart-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -748,10 +1173,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11134,
       "categoryId": 333,
+      "contentType": "field",
       "title": "الفنون المسرحية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/theatricalarts-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -759,10 +1187,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11192,
       "categoryId": 333,
+      "contentType": "field",
       "title": "تصاميم تراثية معاصرة",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/heritagedesigns-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -770,10 +1201,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12268,
       "categoryId": 333,
+      "contentType": "field",
       "title": "حدائق الفن",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/artgardens-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -781,10 +1215,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12336,
       "categoryId": 333,
+      "contentType": "field",
       "title": "حكايات مرئية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/visualtales-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
@@ -792,10 +1229,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12284,
       "categoryId": 413,
+      "contentType": "field",
       "title": "الملاحة على اليابسة",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/landnavigation-413.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
@@ -803,10 +1243,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12285,
       "categoryId": 413,
+      "contentType": "field",
       "title": "خطواتي الكشفية الصحية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/myhealthscreeningsteps-413.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
@@ -814,10 +1257,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12286,
       "categoryId": 413,
+      "contentType": "field",
       "title": "صناع التغيير",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/changemakers-413.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
@@ -825,10 +1271,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12287,
       "categoryId": 413,
+      "contentType": "field",
       "title": "مجتمعي وبيئتي مسؤوليتي",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mycommunityenvironmentresponsibility-413.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
@@ -836,10 +1285,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12288,
       "categoryId": 413,
+      "contentType": "field",
       "title": "مخيمي التقني",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mytechnicalcamp-413.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
@@ -847,10 +1299,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12290,
       "categoryId": 413,
+      "contentType": "field",
       "title": "مهاراتي الكشفية من الاستعداد إلى الإنجاز",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/myscoutingskillsprepachievement-413.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
@@ -858,10 +1313,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11075,
       "categoryId": 513,
+      "contentType": "field",
       "title": "مهارات الأولمبياد الرياضي",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/olympicsportsskills513.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
@@ -869,10 +1327,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11076,
       "categoryId": 513,
+      "contentType": "field",
       "title": "مهارات الرياضات الإلكترونية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills513.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
@@ -880,10 +1341,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11072,
       "categoryId": 513,
+      "contentType": "field",
       "title": "مهارات الرياضات الجماعية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-teamsportsskills513.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
@@ -891,10 +1355,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11077,
       "categoryId": 513,
+      "contentType": "field",
       "title": "مهارات الرياضات الذهنية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mentalsportsskills513.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
@@ -902,10 +1369,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11073,
       "categoryId": 513,
+      "contentType": "field",
       "title": "مهارات الرياضات الفردية",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-individualsportsskills513.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
@@ -913,21 +1383,125 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11074,
       "categoryId": 513,
+      "contentType": "field",
       "title": "مهارات رياضات الدفاع عن النفس",
       "stage": "المتوسطة",
       "stageId": "middle",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/selfdefensesportsskills513.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
     },
     {
+      "sourceId": 12609,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - حياكم",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
+      "sourceId": 12639,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثالث - سفراء الاستدامة",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
+      "sourceId": 12621,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - رحلة نجاح",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
+      "sourceId": 12643,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "الوضوء مفتاح القبول",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12629,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "طهارة ونقاء",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12625,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "نداء الرحمن",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12647,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "وضوئي صحيح",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
       "sourceId": 11050,
       "categoryId": 114,
+      "contentType": "field",
       "title": "التصاميم العلمية التقنية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-114.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
@@ -935,10 +1509,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11033,
       "categoryId": 114,
+      "contentType": "field",
       "title": "الذكاء الاصطناعي",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-artificialintelligence-114.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
@@ -946,10 +1523,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11051,
       "categoryId": 114,
+      "contentType": "field",
       "title": "إنترنت الأشياء",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-114.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
@@ -957,10 +1537,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11053,
       "categoryId": 114,
+      "contentType": "field",
       "title": "رواد فضاء المستقبل",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-futureastronauts-114.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
@@ -968,10 +1551,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11049,
       "categoryId": 114,
+      "contentType": "field",
       "title": "مدن المستقبل",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-citiesofthefuture-114.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
@@ -979,10 +1565,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11028,
       "categoryId": 224,
+      "contentType": "field",
       "title": "التطوع الطلابي",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering224.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
@@ -990,10 +1579,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11029,
       "categoryId": 224,
+      "contentType": "field",
       "title": "مهارات طموحة",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-ambitiousskills224.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
@@ -1001,10 +1593,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11225,
       "categoryId": 334,
+      "contentType": "field",
       "title": "الأزياء السعودية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/saudifashion-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1012,10 +1607,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11189,
       "categoryId": 334,
+      "contentType": "field",
       "title": "البرنامج الموسيقي (الأناشيد الوطنية)",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/nationalanthems-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1023,10 +1621,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11215,
       "categoryId": 334,
+      "contentType": "field",
       "title": "الثقافة الإعلامية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mediaculture-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1034,10 +1635,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12317,
       "categoryId": 334,
+      "contentType": "field",
       "title": "الفن السابع (السينما)",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/cinemaseventhart-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1045,10 +1649,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11135,
       "categoryId": 334,
+      "contentType": "field",
       "title": "الفنون المسرحية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/theatricalarts-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1056,10 +1663,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11193,
       "categoryId": 334,
+      "contentType": "field",
       "title": "تصاميم تراثية معاصرة",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/heritagedesigns-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1067,10 +1677,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12269,
       "categoryId": 334,
+      "contentType": "field",
       "title": "حدائق الفن",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/artgardens-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1078,10 +1691,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12337,
       "categoryId": 334,
+      "contentType": "field",
       "title": "حكايات مرئية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/visualtales-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
@@ -1089,10 +1705,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12291,
       "categoryId": 414,
+      "contentType": "field",
       "title": "أُغامر وأكتشف",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/riskdiscover-414.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
@@ -1100,10 +1719,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12292,
       "categoryId": 414,
+      "contentType": "field",
       "title": "أفقي الكشفي الواسع",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/widescouthorizontal-414.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
@@ -1111,10 +1733,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12294,
       "categoryId": 414,
+      "contentType": "field",
       "title": "سفير البيئة والمجتمع",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/ambassadorenvironmentsociety-414.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
@@ -1122,10 +1747,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12295,
       "categoryId": 414,
+      "contentType": "field",
       "title": "سواعد كشفية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scoutarms-414.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
@@ -1133,10 +1761,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 12297,
       "categoryId": 414,
+      "contentType": "field",
       "title": "واحة الإبداع الكشفي",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "النشاط الكشفي",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/oasisscoutingcreativity-414.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
@@ -1144,10 +1775,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11081,
       "categoryId": 514,
+      "contentType": "field",
       "title": "مهارات الأولمبياد الرياضي",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/olympicsportsskills514.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
@@ -1155,10 +1789,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11082,
       "categoryId": 514,
+      "contentType": "field",
       "title": "مهارات الرياضات الإلكترونية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills514.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
@@ -1166,10 +1803,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11078,
       "categoryId": 514,
+      "contentType": "field",
       "title": "مهارات الرياضات الجماعية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-teamsportsskills514.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
@@ -1177,10 +1817,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11083,
       "categoryId": 514,
+      "contentType": "field",
       "title": "مهارات الرياضات الذهنية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mentalsportsskills514.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
@@ -1188,10 +1831,13 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11079,
       "categoryId": 514,
+      "contentType": "field",
       "title": "مهارات الرياضات الفردية",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsandhealth-individualsportsskills514.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
@@ -1199,13 +1845,126 @@ window.IEN_CATALOG = {
     {
       "sourceId": 11080,
       "categoryId": 514,
+      "contentType": "field",
       "title": "مهارات رياضات الدفاع عن النفس",
       "stage": "الثانوية",
       "stageId": "secondary",
       "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/selfdefensesportsskills514.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
+    },
+    {
+      "sourceId": 12610,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - حياكم",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12640,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثالث - سفراء الاستدامة",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12622,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - رحلة نجاح",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12644,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "الوضوء مفتاح القبول",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12630,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "طهارة ونقاء",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12626,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "نداء الرحمن",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-1weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12648,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "وضوئي صحيح",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     }
   ]
 };
+
+(function(){
+  const load=()=>{
+    if(!document.querySelector('link[data-ien-extracurricular]')){
+      const css=document.createElement('link');css.rel='stylesheet';css.href='extracurricular.css?v=20260819-1';css.dataset.ienExtracurricular='1';document.head.appendChild(css);
+    }
+    if(!document.querySelector('script[data-ien-extracurricular]')){
+      const script=document.createElement('script');script.src='extracurricular.js?v=20260819-1';script.dataset.ienExtracurricular='1';document.body.appendChild(script);
+    }
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',load,{once:true}); else setTimeout(load,0);
+})();
