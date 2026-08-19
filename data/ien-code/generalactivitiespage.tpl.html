@@ -1,0 +1,818 @@
+﻿<style>
+    #cd-team li {
+        min-height: 185px !important;
+    }
+</style>
+<div class="container-fluid header-bottom" ng-show="(!navigateAs || navigateAs==6) && $root.isOrigin == true">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb-arrow">
+            <li><a href="#/"> <i class="fa fa-home breadcrumb-home"></i></a></li>
+            <li><a href="#/studentactivities">الأنشطة الطلابية</a></li>
+            <li ng-if="categoryId==0" class="active"><span>المجالات</span></li>
+            <li ng-if="categoryId==1 || categoryId==2 || categoryId==3 || categoryId==4 || categoryId==5"><a href="#/generalactivities">المجالات</a></li>
+            <li ng-if="categoryId==1" class="active"><span>العلوم والتقنية</span></li>
+            <li ng-if="categoryId==2" class="active"><span>المواطنة والحياة</span></li>
+            <li ng-if="categoryId==3" class="active"><span>الثقافة والفنون</span></li>
+            <li ng-if="categoryId==4" class="active"><span>النشاط الكشفي</span></li>
+            <li ng-if="categoryId==5" class="active"><span>الرياضة والصحة</span></li>
+            <li ng-if="categoryId==6" class="active"><span>الأيام والمناسبات</span></li>
+            <li ng-if="categoryId==7" class="active"><span>الفترات اللاصفية</span></li>
+            <li ng-if="categoryId==8" class="active"><span>المسابقات</span></li>
+            <li ng-if="categoryId==61 || categoryId==62"><a href="#/generalactivities/6">الأيام والمناسبات</a></li>
+            <li ng-if="categoryId==61" class="active"><span>الأيام الوطنية</span></li>
+            <li ng-if="categoryId==62" class="active"><span>الأيام العالمية</span></li>
+            <li ng-if="categoryId==71 || categoryId==72 || categoryId==73"><a href="#/generalactivities/7">الفترات اللاصفية</a></li>
+            <li ng-if="categoryId==71" class="active"><span>الحضور والاصطفاف الصباحي</span></li>
+            <li ng-if="categoryId==72" class="active"><span>الروتين اليومي</span></li>
+            <li ng-if="categoryId==73" class="active"><span>صلاة الظهر والمناوبة</span></li>
+        </ol>
+    </div>
+</div>
+<ol class="breadcrumb breadcrumb-arrow" ng-show="navigateAs<6  && $root.isOrigin == true">
+    <li><a href="#/"> <i class="fa fa-home breadcrumb-home"></i></a></li>
+    <li><a href="#/studentactivities">الأنشطة الطلابية</a></li>
+    <li ng-if="categoryId==0" class="active"><span>المجالات</span></li>
+    <li ng-if="categoryId==1 || categoryId==2 || categoryId==3 || categoryId==4 || categoryId==5"><a href="#/generalactivities">المجالات</a></li>
+    <li ng-if="categoryId==1" class="active"><span>العلوم والتقنية</span></li>
+    <li ng-if="categoryId==2" class="active"><span>المواطنة والحياة</span></li>
+    <li ng-if="categoryId==3" class="active"><span>الثقافة والفنون</span></li>
+    <li ng-if="categoryId==4" class="active"><span>النشاط الكشفي</span></li>
+    <li ng-if="categoryId==5" class="active"><span>الرياضة والصحة</span></li>
+    <li ng-if="categoryId==6" class="active"><span>الأيام والمناسبات</span></li>
+    <li ng-if="categoryId==7" class="active"><span>الفترات اللاصفية</span></li>
+    <li ng-if="categoryId==8" class="active"><span>المسابقات</span></li>
+    <li ng-if="categoryId==61 || categoryId==62"><a href="#/generalactivities/6">الأيام والمناسبات</a></li>
+    <li ng-if="categoryId==61" class="active"><span>الأيام الوطنية</span></li>
+    <li ng-if="categoryId==62" class="active"><span>الأيام العالمية</span></li>
+    <li ng-if="categoryId==71 || categoryId==72 || categoryId==73"><a href="#/generalactivities/7">الفترات اللاصفية</a></li>
+    <li ng-if="categoryId==71" class="active"><span>الحضور والاصطفاف الصباحي</span></li>
+    <li ng-if="categoryId==72" class="active"><span>الروتين اليومي</span></li>
+    <li ng-if="categoryId==73" class="active"><span>صلاة الظهر والمناوبة</span></li>
+</ol>
+
+<div class="container">
+    <section id="cd-team" class="cd-section">
+        <div class="information container-fluid">           
+            <div id="main_area">
+                <div class="col-sm-12">
+                    <h1 class="title-section" style="text-align: right">الأنشطة الطلابية</h1>
+                </div>
+                <div ng-if="categoryId==4" class="col-sm-12">
+                    <p style="text-align: justify; font-size: 12pt; margin-bottom: 30px;">تنفذ أنشطة المجال الكشفي لأفراد الوحدة الكشفية بالمدرسة، ويتولى قيادة الوحدة الكشفية ومتابعة أنشطتها أحد المعلمين الحاصلين على تأهيل كشفي. </p>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==0">
+                    <ul class="list-cards">
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/1">
+                                    <div class="col-xs-4">
+                                        <img title="العلوم والتقنية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            العلوم والتقنية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/2">
+                                    <div class="col-xs-4">
+                                        <img title="المواطنة والحياة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المواطنة والحياة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/3">
+                                    <div class="col-xs-4">
+                                        <img title="الثقافة والفنون" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الثقافة والفنون
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/4">
+                                    <div class="col-xs-4">
+                                        <img title="النشاط الكشفي" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            النشاط الكشفي
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/5">
+                                    <div class="col-xs-4">
+                                        <img title="الرياضة والصحة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الرياضة والصحة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==1">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/111">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/112">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/113">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/114">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==2">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/221">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/222">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/223">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/224">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==3">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/331">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/332">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/333">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/334">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==4">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/411">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/412">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/413">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/414">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==5">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/511">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/512">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/513">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/514">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==6">
+                    <ul class="list-cards">
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/61">
+                                    <div class="col-xs-4">
+                                        <img title="الأيام الوطنية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الأيام الوطنية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/62">
+                                    <div class="col-xs-4">
+                                        <img title="الأيام العالمية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الأيام العالمية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==7">
+                    <ul class="list-cards">
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/71">
+                                    <div class="col-xs-4">
+                                        <img title="الحضور والاصطفاف الصباحي" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الحضور والاصطفاف الصباحي
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/72">
+                                    <div class="col-xs-4">
+                                        <img title="الروتين اليومي" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الروتين اليومي
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-4">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/73">
+                                    <div class="col-xs-4">
+                                        <img title="صلاة الظهر والمناوبة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            صلاة الظهر والمناوبة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==61">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/611">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/612">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/613">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/614">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==62">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/621">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/622">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/623">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/624">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==71">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/711">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/712">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/713">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/714">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==72">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/721">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/722">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/723">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/724">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12" ng-if="categoryId==73">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/731">
+                                    <div class="col-xs-4">
+                                        <img title="الطفولة المبكرة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الطفولة المبكرة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/732">
+                                    <div class="col-xs-4">
+                                        <img title="الصفوف العليا (المرحلة الابتدائية)" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الابتدائية (الصفوف العليا)
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/733">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة المتوسطة" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة المتوسطة
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivitiespackages/734">
+                                    <div class="col-xs-4">
+                                        <img title="المرحلة الثانوية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/courses.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المرحلة الثانوية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

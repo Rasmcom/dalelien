@@ -1,0 +1,90 @@
+﻿<style>
+    #cd-team li {
+        min-height: 185px !important;
+    }
+</style>
+<div class="container-fluid header-bottom" ng-show="(!navigateAs || navigateAs==6) && $root.isOrigin == true">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb-arrow">
+            <li><a href="#/"> <i class="fa fa-home breadcrumb-home"></i></a></li>
+            <li class="active"><span>الأنشطة الطلابية</span></li>
+           
+        </ol>
+    </div>
+</div>
+<ol class="breadcrumb breadcrumb-arrow" ng-show="navigateAs<6  && $root.isOrigin == true">
+    <li><a href="#/"> <i class="fa fa-home breadcrumb-home"></i></a></li>
+    <li class="active"><span>الأنشطة الطلابية</span></li>
+</ol>
+
+<div class="container">
+    <section id="cd-team" class="cd-section">
+        <div class="information container-fluid">
+            <div id="main_area">
+                <div class="col-sm-12">
+                    <h1 class="title-section" style="text-align: right">الأنشطة الطلابية</h1>
+                </div>
+                <div class="col-sm-12">
+                    <ul class="list-cards">
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities">
+                                    <div class="col-xs-4">
+                                        <img title="المجالات" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            المجالات
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/6">
+                                    <div class="col-xs-4">
+                                        <img title="الأيام والمناسبات" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الأيام والمناسبات
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/7">
+                                    <div class="col-xs-4">
+                                        <img title="الفترات اللاصفية" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                            الفترات اللاصفية
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+                            <div class="border-section">
+                                <a class="pointer" href="/#/generalactivities/8">
+                                    <div class="col-xs-4">
+                                        <img title="المسابقات" class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/ien_icon_book.png" />
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <h3 class="title-card">
+                                           المسابقات
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>               
+            </div>
+        </div>
+    </section>
+</div>

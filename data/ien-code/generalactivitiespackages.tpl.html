@@ -1,0 +1,95 @@
+﻿<style>
+    #cd-team li {
+        min-height: 185px !important;
+    }
+</style>
+<div class="container-fluid header-bottom" ng-show="$root.isOrigin == true">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb-arrow">
+            <li><a href="#/"> <i class="fa fa-home breadcrumb-home"></i></a></li>
+            <li><a href="#/studentactivities">الأنشطة الطلابية</a></li>
+            <li ng-if="categoryId==111 || categoryId==112 || categoryId==113 || categoryId==114 || categoryId==221 || categoryId==222 || categoryId== 223 || categoryId==224 || categoryId==511 || categoryId==512 || categoryId==513 || categoryId==514"><a href="#/generalactivities">المجالات</a></li>
+            <li ng-if="categoryId==111 || categoryId==112 || categoryId==113 || categoryId==114"><a href="#/generalactivities/1">العلوم والتقنية</a></li>
+            <li ng-if="categoryId==221 || categoryId==222 || categoryId==223 || categoryId==224"><a href="#/generalactivities/2">المواطنة والحياة</a></li>
+            <li ng-if="categoryId==331 || categoryId==332 || categoryId==333 || categoryId==334"><a href="#/generalactivities/3">الثقافة والفنون</a></li>
+            <li ng-if="categoryId==411 || categoryId==412 || categoryId==413 || categoryId==414"><a href="#/generalactivities/4">النشاط الكشفي</a></li>
+            <li ng-if="categoryId==511 || categoryId==512 || categoryId==513 || categoryId==514"><a href="#/generalactivities/5">الرياضة والصحة</a></li>
+            <li ng-if="categoryId==611 || categoryId==612 || categoryId==613 || categoryId==614"><a href="#/generalactivities/6">الأيام والمناسبات</a></li>
+            <li ng-if="categoryId==611 || categoryId==612 || categoryId==613 || categoryId==614"><a href="#/generalactivities/61">الأيام الوطنية</a></li>
+            <li ng-if="categoryId==621 || categoryId==622 || categoryId==623 || categoryId==624"><a href="#/generalactivities/62">الأيام العالمية</a></li>
+            <li ng-if="categoryId==711 || categoryId==712 || categoryId==713 || categoryId==714"><a href="#/generalactivities/71">الحضور والاصطفاف الصباحي</a></li>
+            <li ng-if="categoryId==721 || categoryId==722 || categoryId==723 || categoryId==724"><a href="#/generalactivities/72">الاستراحات</a></li>
+            <li ng-if="categoryId==731 || categoryId==732 || categoryId==733 || categoryId==734"><a href="#/generalactivities/73">صلاة الظهر والمناوبة</a></li>
+            <li ng-if="categoryId==111 || categoryId==221 || categoryId==331 || categoryId==511 || categoryId==611 || categoryId==621 || categoryId==711 || categoryId==721 || categoryId==731" class="active"><span>الطفولة المبكرة</span></li>
+            <li ng-if="categoryId==112 || categoryId==222 || categoryId==332 || categoryId==512 || categoryId==612 || categoryId==622 || categoryId==712 || categoryId==722 || categoryId==732" class="active"><span>المرحلة الابتدائية (الصفوف العليا)</span></li>
+            <li ng-if="categoryId==113 || categoryId==223 || categoryId==333 || categoryId==513 || categoryId==613 || categoryId==623 || categoryId==713 || categoryId==723 || categoryId==733" class="active"><span>المرحلة المتوسطة</span></li>
+            <li ng-if="categoryId==114 || categoryId==224 || categoryId==334 || categoryId==514 || categoryId==614 || categoryId==624 || categoryId==714 || categoryId==724 || categoryId==734" class="active"><span>المرحلة الثانوية</span></li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <section id="cd-team" class="cd-section">
+        <div class="information container-fluid">
+            <div class="col-sm-12">
+                <h1 ng-if="categoryId==111" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – العلوم والتقنية – الطفولة المبكرة
+                </h1>
+                <h1 ng-if="categoryId==112" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – العلوم والتقنية – المرحلة الابتدائية (الصفوف العليا)
+                </h1>
+                <h1 ng-if="categoryId==113" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – العلوم والتقنية – المرحلة المتوسطة
+                </h1>
+                <h1 ng-if="categoryId==114" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – العلوم والتقنية – المرحلة الثانوية
+                </h1>
+                <h1 ng-if="categoryId==221" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – المواطنة والحياة – الطفولة المبكرة
+                </h1>
+                <h1 ng-if="categoryId==222" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – المواطنة والحياة – المرحلة الابتدائية (الصفوف العليا)
+                </h1>
+                <h1 ng-if="categoryId==223" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – المواطنة والحياة – المرحلة المتوسطة
+                </h1>
+                <h1 ng-if="categoryId==224" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – المواطنة والحياة – المرحلة الثانوية
+                </h1>
+                <h1 ng-if="categoryId==331" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – الثقافة والفنون – الطفولة المبكرة
+                </h1>
+                <h1 ng-if="categoryId==332" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – الثقافة والفنون – المرحلة الابتدائية (الصفوف العليا)
+                </h1>
+                <h1 ng-if="categoryId==333" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – الثقافة والفنون – المرحلة المتوسطة
+                </h1>
+                <h1 ng-if="categoryId==334" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – الثقافة والفنون – المرحلة الثانوية
+                </h1>
+                <h1 ng-if="categoryId==411" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – النشاط الكشفي – الطفولة المبكرة
+                </h1>
+                <h1 ng-if="categoryId==412" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – النشاط الكشفي – المرحلة الابتدائية (الصفوف العليا)
+                </h1>
+                <h1 ng-if="categoryId==413" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – النشاط الكشفي – المرحلة المتوسطة
+                </h1>
+                <h1 ng-if="categoryId==414" class="title-section text-right">
+                    الأنشطة الطلابية – المجالات – النشاط الكشفي – المرحلة الثانوية
+                </h1>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <ul class="hide-bullets menulist" style="margin-right:40px;">
+            <a ng-repeat="item in mediaContents track by $index" href="{{item.linkOrPath}}" ng-click="handleMediaClick($event,item.id)">                
+                <li title="{{item.title}}">
+                    <img class="img-responsive" src="https://iendu.azureedge.net/portal/v2/img/Pdf.png" alt="{{item.title}}">
+                    {{item.title}}
+                </li>
+            </a>         
+        </ul>
+    </div>
+</div>
