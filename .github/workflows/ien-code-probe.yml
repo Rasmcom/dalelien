@@ -1,0 +1,45 @@
+name: IEN controller probe
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    if: startsWith(github.event.issue.title, '[codeprobe]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve IEN www endpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t IPS < <(getent ahostsv4 ien.edu.sa | awk '$2 == "STREAM" {print $1}' | sort -u)
+          SELECTED=""
+          for ip in "${IPS[@]}"; do
+            code=$(curl --resolve "www.ien.edu.sa:443:${ip}" --connect-timeout 3 --max-time 8 -sS -o /dev/null -w '%{http_code}' 'https://www.ien.edu.sa/?choice=2#/generalactivities/' || true)
+            if [[ "$code" =~ ^[23] ]]; then SELECTED="$ip"; break; fi
+          done
+          [ -n "$SELECTED" ] || exit 1
+          echo "$SELECTED www.ien.edu.sa" | sudo tee -a /etc/hosts
+      - name: Fetch IEN activity controllers
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p data/ien-code
+          base='https://www.ien.edu.sa/app/Portal/generalactivities'
+          curl -fsSL "$base/generalactivities.module.js" -o data/ien-code/generalactivities.module.js
+          curl -fsSL "$base/generalactivities.config.js" -o data/ien-code/generalactivities.config.js
+          curl -fsSL "$base/studentactivities.controller.js" -o data/ien-code/studentactivities.controller.js
+          curl -fsSL "$base/generalactivitiespage.controller.js" -o data/ien-code/generalactivitiespage.controller.js
+          curl -fsSL "$base/generalactivitiespackages.controller.js" -o data/ien-code/generalactivitiespackages.controller.js
+      - name: Commit controller files
+        run: |
+          git config user.name "ien-code-probe"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ien-code
+          git diff --cached --quiet || git commit -m "chore: capture IEN activity controllers"
+          git push
