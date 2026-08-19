@@ -111,4 +111,5 @@ function renderSync(){
 }
 function render(){renderStages();renderFields();renderGuides();renderSync();}
 $('search').addEventListener('input',e=>{state.query=e.target.value;renderGuides();});
+document.querySelector('.footer-source')?.remove();
 render();
