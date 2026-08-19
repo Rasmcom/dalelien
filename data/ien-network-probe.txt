@@ -1,7 +1,13 @@
-timestamp=2026-08-19T05:04:21Z
+timestamp=2026-08-19T05:07:49Z
 
 === getent ien.edu.sa ===
-20.74.178.187   STREAM ien.edu.sa
+20.203.22.177   STREAM ien.edu.sa
+20.203.22.177   DGRAM  
+20.203.22.177   RAW    
+20.203.28.184   STREAM 
+20.203.28.184   DGRAM  
+20.203.28.184   RAW    
+20.74.178.187   STREAM 
 20.74.178.187   DGRAM  
 20.74.178.187   RAW    
 20.74.180.41    STREAM 
@@ -28,31 +34,34 @@ timestamp=2026-08-19T05:04:21Z
 20.203.29.165   STREAM 
 20.203.29.165   DGRAM  
 20.203.29.165   RAW    
-20.203.22.177   STREAM 
-20.203.22.177   DGRAM  
-20.203.22.177   RAW    
-20.203.28.184   STREAM 
-20.203.28.184   DGRAM  
-20.203.28.184   RAW    
 exit=0
 
 === getent www.ien.edu.sa ===
 exit=2
 
 === Google DoH ien.edu.sa ===
-{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"ien.edu.sa.","type":1}],"Answer":[{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.29.165"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.133.79"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.18.128"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.22.177"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.45.70.161"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.28.184"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.29.129"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.180.47"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.178.187"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.182.126"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.180.41"}],"Comment":"Response from 195.246.104.200."}
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"ien.edu.sa.","type":1}],"Answer":[{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.45.70.161"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.180.41"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.29.165"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.133.79"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.182.126"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.28.184"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.22.177"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.18.128"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.180.47"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.203.29.129"},{"name":"ien.edu.sa.","type":1,"TTL":3600,"data":"20.74.178.187"}],"Comment":"Response from 195.246.104.200."}
 exit=0
 
 === Google DoH www.ien.edu.sa ===
 {"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"www.ien.edu.sa.","type":1}],"Answer":[{"name":"www.ien.edu.sa.","type":5,"TTL":30,"data":"wwwienedusa.trafficmanager.net."}],"Authority":[{"name":"trafficmanager.net.","type":6,"TTL":30,"data":"tm1.dns-tm.com. hostmaster.trafficmanager.net. 2003080800 900 300 2419200 30"}]}
 exit=0
 
-=== HTTPS ien.edu.sa ===
-curl: (6) Could not resolve host: www.ien.edu.sa
-code=301 final=https://www.ien.edu.sa/?choice=2 remote=20.74.180.47
-exit=6
+=== direct www tests over apex IPv4 addresses ===
 
-=== HTTPS www.ien.edu.sa ===
-curl: (6) Could not resolve host: www.ien.edu.sa
-code=000 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ remote=
-exit=6
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+curl: (60) SSL certificate problem: self-signed certificate in certificate chain
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
+ip=20.203.18.128 code=200 remote=20.203.18.128 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.203.22.177 code=200 remote=20.203.22.177 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.203.28.184 code=200 remote=20.203.28.184 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.203.29.129 code=200 remote=20.203.29.129 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.203.29.165 code=200 remote=20.203.29.165 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.45.70.161 code=000 remote=20.45.70.161 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=60
+ip=20.74.133.79 code=200 remote=20.74.133.79 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.74.178.187 code=200 remote=20.74.178.187 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.74.180.41 code=200 remote=20.74.180.41 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.74.180.47 code=200 remote=20.74.180.47 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
+ip=20.74.182.126 code=200 remote=20.74.182.126 final=https://www.ien.edu.sa/?choice=2#/generalactivities/ exit=0
