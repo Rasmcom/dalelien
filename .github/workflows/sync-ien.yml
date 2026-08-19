@@ -10,8 +10,6 @@ on:
       - 'sync/**'
       - 'package.json'
       - '.github/workflows/sync-ien.yml'
-  issues:
-    types: [opened]
 
 permissions:
   contents: write
@@ -24,7 +22,6 @@ concurrency:
 
 jobs:
   sync:
-    if: github.event_name != 'issues' || startsWith(github.event.issue.title, '[sync]')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
