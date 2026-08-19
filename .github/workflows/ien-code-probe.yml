@@ -25,7 +25,7 @@ jobs:
           done
           [ -n "$SELECTED" ] || exit 1
           echo "$SELECTED www.ien.edu.sa" | sudo tee -a /etc/hosts
-      - name: Fetch IEN activity controllers and services
+      - name: Fetch IEN activity controllers, templates and services
         shell: bash
         run: |
           set -euo pipefail
@@ -37,6 +37,9 @@ jobs:
           curl -fsSL "$activities/studentactivities.controller.js" -o data/ien-code/studentactivities.controller.js
           curl -fsSL "$activities/generalactivitiespage.controller.js" -o data/ien-code/generalactivitiespage.controller.js
           curl -fsSL "$activities/generalactivitiespackages.controller.js" -o data/ien-code/generalactivitiespackages.controller.js
+          curl -fsSL "$activities/generalactivitiespage.tpl.html?v=47" -o data/ien-code/generalactivitiespage.tpl.html
+          curl -fsSL "$activities/generalactivitiespackages.tpl.html?v=47" -o data/ien-code/generalactivitiespackages.tpl.html
+          curl -fsSL "$activities/studentactivities.tpl.html?v=47" -o data/ien-code/studentactivities.tpl.html
           curl -fsSL "$media/mediacontent.service.js" -o data/ien-code/mediacontent.service.js
           curl -fsSL "$media/mediacontent.config.js" -o data/ien-code/mediacontent.config.js
       - name: Commit controller files
