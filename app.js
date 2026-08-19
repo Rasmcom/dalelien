@@ -18,7 +18,7 @@ const escapeAttr = escapeHtml;
 const experienceCss=document.createElement('link');
 experienceCss.rel='stylesheet'; experienceCss.href='landing.css?v=20260819-2'; document.head.appendChild(experienceCss);
 const brandingCss=document.createElement('link');
-brandingCss.rel='stylesheet'; brandingCss.href='branding.css?v=20260819-1'; document.head.appendChild(brandingCss);
+brandingCss.rel='stylesheet'; brandingCss.href='branding.css?v=20260819-4'; document.head.appendChild(brandingCss);
 
 const STAGE_ICONS = {
   lower:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8.2V6.5A3.5 3.5 0 0 1 10.5 3h3A3.5 3.5 0 0 1 17 6.5v1.7"/><rect x="5" y="7" width="14" height="13" rx="3"/><path d="M8.5 11.5h7M9 15.5h6"/><path class="spark" d="m19.4 3.2.45 1.25 1.25.45-1.25.45-.45 1.25-.45-1.25-1.25-.45 1.25-.45z"/></svg>`,
