@@ -1,0 +1,106 @@
+/* Extracurricular periods — visual extension */
+.fields{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+.field[data-field="الفترات اللاصفية"]{
+  --field-accent:#168f9d;
+  --field-soft:#eaf8fb;
+  --field-ring:rgba(22,143,157,.15);
+  --field-gif:url("https://cdn-icons-gif.flaticon.com/6454/6454154.gif");
+  position:relative;
+}
+.field[data-field="الفترات اللاصفية"]::after{
+  background-color:#fff!important;
+  background-image:var(--field-gif)!important;
+  background-size:35px 35px!important;
+  box-shadow:0 10px 24px rgba(22,143,157,.12)!important
+}
+.field[data-field="الفترات اللاصفية"]::before{
+  background:radial-gradient(circle,rgba(22,143,157,.17),rgba(22,143,157,0) 70%)!important;
+  width:96px!important;height:96px!important;left:-32px!important;bottom:-48px!important
+}
+.field[data-field="الفترات اللاصفية"].active{
+  background:linear-gradient(145deg,#fff 33%,#eaf8fb)!important;
+  border-color:rgba(22,143,157,.36)!important;
+  box-shadow:0 24px 54px rgba(22,143,157,.13)!important
+}
+
+.period-area{
+  margin-top:28px;
+  padding:28px;
+  border:1px solid #dfeaf0;
+  border-radius:26px;
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(240,248,251,.92));
+  box-shadow:0 22px 58px rgba(31,61,99,.06);
+  position:relative;
+  overflow:hidden;
+}
+.period-area::before{
+  content:"";position:absolute;width:230px;height:230px;border-radius:50%;
+  left:-90px;top:-120px;background:radial-gradient(circle,rgba(37,156,167,.12),rgba(37,156,167,0) 70%);
+  pointer-events:none
+}
+.period-heading{position:relative;z-index:2;text-align:right;margin-bottom:18px}
+.period-mini{
+  display:inline-flex;align-items:center;min-height:27px;padding:4px 10px;border-radius:999px;
+  background:#e9f7f8;color:#147e88;font-size:9px;font-weight:800;margin-bottom:7px
+}
+.period-heading h3{margin:0;color:#102747;font-size:22px;line-height:1.45;font-weight:800}
+.period-heading p{margin:5px 0 0;color:#8190a3;font-size:10px;line-height:1.9}
+.period-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;position:relative;z-index:2}
+.period-card{
+  --period-accent:#208e9a;--period-soft:#eff9fa;
+  min-height:112px;border:1px solid #e1e9ef;background:#fff;border-radius:20px;padding:15px;
+  display:flex;align-items:center;gap:13px;text-align:right;color:#334d69;cursor:pointer;position:relative;overflow:hidden;
+  box-shadow:0 12px 30px rgba(31,58,91,.04);
+  transition:transform .36s cubic-bezier(.2,.85,.2,1),box-shadow .3s ease,border-color .3s ease,background .3s ease;
+  animation:periodEnter .6s cubic-bezier(.2,.8,.2,1) both
+}
+.period-card[data-period-index="0"]{--period-accent:#168f9d;--period-soft:#eaf8fb;animation-delay:.03s}
+.period-card[data-period-index="1"]{--period-accent:#5c77d8;--period-soft:#f0f3ff;animation-delay:.09s}
+.period-card[data-period-index="2"]{--period-accent:#b58a37;--period-soft:#fff7e9;animation-delay:.15s}
+.period-card::before{
+  content:"";position:absolute;width:100px;height:100px;border-radius:50%;left:-42px;bottom:-52px;
+  background:var(--period-soft);transition:transform .4s ease
+}
+.period-card:hover,.period-card.active{
+  transform:translateY(-5px) scale(1.015);border-color:color-mix(in srgb,var(--period-accent) 34%,#dfe7ee);
+  box-shadow:0 20px 46px color-mix(in srgb,var(--period-accent) 13%,transparent);
+  background:linear-gradient(145deg,#fff 52%,var(--period-soft))
+}
+.period-card:hover::before,.period-card.active::before{transform:scale(1.5)}
+.period-icon{
+  width:54px;height:54px;border-radius:17px;flex:none;background:#fff center/41px 41px no-repeat;
+  box-shadow:0 10px 24px color-mix(in srgb,var(--period-accent) 13%,transparent);position:relative;z-index:2
+}
+.period-card[data-period-index="0"] .period-icon{background-image:url("https://cdn-icons-gif.flaticon.com/6454/6454154.gif")}
+.period-card[data-period-index="1"] .period-icon{background-image:url("https://cdn-icons-gif.flaticon.com/15568/15568028.gif")}
+.period-card[data-period-index="2"] .period-icon{background-image:url("https://cdn-icons-gif.flaticon.com/11201/11201815.gif")}
+.period-copy{position:relative;z-index:2;display:block;min-width:0}
+.period-copy strong{display:block;font-size:13px;line-height:1.7;color:#173352;font-weight:800}
+.period-copy small{display:block;margin-top:5px;font-size:9px;color:#8796a8;font-weight:600}
+.period-check{
+  position:absolute;left:13px;top:13px;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;
+  background:var(--period-soft);color:var(--period-accent);font-size:11px;font-weight:900;opacity:.35;transform:scale(.86);
+  transition:opacity .25s ease,transform .25s ease
+}
+.period-card.active .period-check{opacity:1;transform:scale(1)}
+.period-guide{border-color:#dce8ed!important}
+.period-guide .guide-stage{background:#edf8fa!important;color:#287b83!important}
+
+@keyframes periodEnter{
+  from{opacity:0;transform:translateY(18px) scale(.97)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+
+@media(max-width:1050px){.fields{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:720px){
+  .fields{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .period-area{margin-top:20px;padding:19px 14px;border-radius:22px}
+  .period-heading h3{font-size:19px}
+  .period-list{grid-template-columns:1fr;gap:10px}
+  .period-card{min-height:92px;padding:12px;border-radius:18px}
+  .period-icon{width:49px;height:49px;background-size:37px 37px}
+  .period-copy strong{font-size:12px}
+  .period-copy small{font-size:9px}
+}
+
+@media(prefers-reduced-motion:reduce){.period-card{animation:none!important;transition:none!important}}
