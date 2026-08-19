@@ -38,7 +38,7 @@
 }
 .stage-icon{
   width:56px!important;height:56px!important;border-radius:18px!important;
-  background-color:var(--stage-soft)!important;background-repeat:no-repeat!important;
+  background-color:#fff!important;background-repeat:no-repeat!important;
   background-position:center!important;background-size:43px 43px!important;
   box-shadow:0 10px 24px var(--stage-ring)!important;
   transition:transform .38s cubic-bezier(.2,.85,.2,1),box-shadow .3s ease!important
@@ -71,7 +71,7 @@
 .field[data-field]::after{
   content:"";order:-1;position:relative;z-index:2;flex:none;
   width:44px;height:44px;border-radius:15px;
-  background-color:var(--field-soft);background-image:var(--field-gif);
+  background-color:#fff;background-image:var(--field-gif);
   background-position:center;background-repeat:no-repeat;background-size:35px 35px;
   box-shadow:0 10px 22px var(--field-ring);
   transition:transform .38s cubic-bezier(.2,.85,.2,1),box-shadow .3s ease
@@ -130,10 +130,6 @@ footer{padding:0!important;background:#091b31!important;border-top:1px solid rgb
   filter:drop-shadow(0 3px 8px rgba(255,93,114,.25));
   animation:rasmHeart 1.25s ease-in-out infinite;transform-origin:center
 }
-.rasm-credit::after{
-  content:"الأيقونات المتحركة: Freepik و Magnific عبر Flaticon";
-  width:100%;display:block;margin-top:1px;color:#8191a5;font-size:8px;font-weight:500
-}
 @keyframes rasmHeart{0%,100%{transform:scale(1)}14%{transform:scale(1.25)}28%{transform:scale(1)}42%{transform:scale(1.17)}58%{transform:scale(1)}}
 
 /* Keep the page alive even after the first reveal */
@@ -158,7 +154,6 @@ footer{padding:0!important;background:#091b31!important;border-top:1px solid rgb
   }
   .rasm-wordmark{flex-basis:66px!important;width:66px!important;height:48px!important;min-width:66px!important}
   .rasm-credit{font-size:9px!important;line-height:1.8;max-width:280px}
-  .rasm-credit::after{font-size:7px}
 }
 
 @media(prefers-reduced-motion:reduce){
