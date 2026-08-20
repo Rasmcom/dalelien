@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-08-20T02:21:43.153Z",
-  "lastSync": "2026-08-20T02:21:43.153Z",
+  "lastAttempt": "2026-08-20T21:09:54.574Z",
+  "lastSync": "2026-08-20T21:09:54.574Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -611,6 +611,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
     },
     {
+      "sourceId": 11055,
+      "categoryId": 222,
+      "contentType": "field",
+      "title": "قيمنا حياة- الصف السادس الابتدائي- دليل الطالب",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentguide222.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
+    },
+    {
       "sourceId": 11025,
       "categoryId": 222,
       "contentType": "field",
@@ -1129,6 +1143,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
     },
     {
+      "sourceId": 11057,
+      "categoryId": 223,
+      "contentType": "field",
+      "title": "قيمنا حياة- الصف الثالث المتوسط- دليل الطالب",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentguide223.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
+    },
+    {
       "sourceId": 11027,
       "categoryId": 223,
       "contentType": "field",
@@ -1479,6 +1507,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
+      "sourceId": 12657,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الرابع - صحتي مسؤوليتي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
       "sourceId": 12643,
       "categoryId": 733,
       "contentType": "period",
@@ -1629,6 +1671,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering224.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
+    },
+    {
+      "sourceId": 11059,
+      "categoryId": 224,
+      "contentType": "field",
+      "title": "قيمنا حياة- الصف الثاني الثانوي- دليل الطالب",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentguide224.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
     },
@@ -1979,6 +2035,20 @@
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12658,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الرابع - صحتي مسؤوليتي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-714.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
