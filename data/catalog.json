@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-08-24T02:36:13.731Z",
-  "lastSync": "2026-08-24T02:36:13.731Z",
+  "lastAttempt": "2026-08-25T02:22:32.578Z",
+  "lastSync": "2026-08-25T02:22:32.578Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -1395,20 +1395,6 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
     },
     {
-      "sourceId": 12289,
-      "categoryId": 413,
-      "contentType": "field",
-      "title": "من هدي القرآن والسنة",
-      "stage": "المتوسطة",
-      "stageId": "middle",
-      "field": "النشاط الكشفي",
-      "period": null,
-      "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/fromquranandsunnah-413.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/413"
-    },
-    {
       "sourceId": 12290,
       "categoryId": 413,
       "contentType": "field",
@@ -1909,20 +1895,6 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/widescouthorizontal-414.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
-    },
-    {
-      "sourceId": 12293,
-      "categoryId": 414,
-      "contentType": "field",
-      "title": "درب الإحسان",
-      "stage": "الثانوية",
-      "stageId": "secondary",
-      "field": "النشاط الكشفي",
-      "period": null,
-      "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/pathofbenevolence-414.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/414"
     },
