@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-08-25T02:22:32.578Z",
-  "lastSync": "2026-08-25T02:22:32.578Z",
+  "lastAttempt": "2026-08-26T02:38:21.822Z",
+  "lastSync": "2026-08-26T02:38:21.822Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -469,20 +469,6 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-711.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
-    },
-    {
-      "sourceId": 12659,
-      "categoryId": 721,
-      "contentType": "period",
-      "title": "وصف الممارسات الروتينية",
-      "stage": "الأولية",
-      "stageId": "lower",
-      "field": "الفترات اللاصفية",
-      "period": "الروتين اليومي",
-      "periodId": 72,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/721"
     },
     {
       "sourceId": 12641,
@@ -975,20 +961,6 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
-      "sourceId": 12616,
-      "categoryId": 712,
-      "contentType": "period",
-      "title": "إذاعة الأسبوع الثالث - سفراء الاستدامة",
-      "stage": "العليا",
-      "stageId": "upper",
-      "field": "الفترات اللاصفية",
-      "period": "الحضور والاصطفاف الصباحي",
-      "periodId": 71,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekbroadcast-712.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
-    },
-    {
       "sourceId": 12636,
       "categoryId": 712,
       "contentType": "period",
@@ -999,6 +971,34 @@
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12616,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - رحلة نجاح",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12665,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الخامس - الإرث والأمجاد",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-5weekbroadcast-712.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
@@ -1015,20 +1015,6 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-712.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
-    },
-    {
-      "sourceId": 12660,
-      "categoryId": 722,
-      "contentType": "period",
-      "title": "وصف الممارسات الروتينية",
-      "stage": "العليا",
-      "stageId": "upper",
-      "field": "الفترات اللاصفية",
-      "period": "الروتين اليومي",
-      "periodId": 72,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/722"
     },
     {
       "sourceId": 12642,
@@ -1563,20 +1549,6 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
-      "sourceId": 12661,
-      "categoryId": 723,
-      "contentType": "period",
-      "title": "وصف الممارسات الروتينية",
-      "stage": "المتوسطة",
-      "stageId": "middle",
-      "field": "الفترات اللاصفية",
-      "period": "الروتين اليومي",
-      "periodId": 72,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/723"
-    },
-    {
       "sourceId": 12643,
       "categoryId": 733,
       "contentType": "period",
@@ -2107,20 +2079,6 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-714.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
-    },
-    {
-      "sourceId": 12662,
-      "categoryId": 724,
-      "contentType": "period",
-      "title": "وصف الممارسات الروتينية",
-      "stage": "الثانوية",
-      "stageId": "secondary",
-      "field": "الفترات اللاصفية",
-      "period": "الروتين اليومي",
-      "periodId": 72,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/724"
     },
     {
       "sourceId": 12644,
