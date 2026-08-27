@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-08-26T02:38:21.822Z",
-  "lastSync": "2026-08-26T02:38:21.822Z",
+  "lastAttempt": "2026-08-27T11:09:58.137Z",
+  "lastSync": "2026-08-27T11:09:58.137Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -471,6 +471,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
     {
+      "sourceId": 12659,
+      "categoryId": 721,
+      "contentType": "period",
+      "title": "وصف الممارسات الروتينية",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الروتين اليومي",
+      "periodId": 72,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/721"
+    },
+    {
       "sourceId": 12641,
       "categoryId": 731,
       "contentType": "period",
@@ -481,6 +495,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12669,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "بصلاتك تسمو روحك",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-731.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
@@ -1017,6 +1045,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
+      "sourceId": 12660,
+      "categoryId": 722,
+      "contentType": "period",
+      "title": "وصف الممارسات الروتينية",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الروتين اليومي",
+      "periodId": 72,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/722"
+    },
+    {
       "sourceId": 12642,
       "categoryId": 732,
       "contentType": "period",
@@ -1027,6 +1069,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12670,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "بصلاتك تسمو روحك",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-732.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
@@ -1549,6 +1605,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
+      "sourceId": 12661,
+      "categoryId": 723,
+      "contentType": "period",
+      "title": "وصف الممارسات الروتينية",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الروتين اليومي",
+      "periodId": 72,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/723"
+    },
+    {
       "sourceId": 12643,
       "categoryId": 733,
       "contentType": "period",
@@ -1559,6 +1629,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12671,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "بصلاتك تسمو روحك",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-733.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
@@ -2081,6 +2165,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
     {
+      "sourceId": 12662,
+      "categoryId": 724,
+      "contentType": "period",
+      "title": "وصف الممارسات الروتينية",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الروتين اليومي",
+      "periodId": 72,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-routinespractices.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/724"
+    },
+    {
       "sourceId": 12644,
       "categoryId": 734,
       "contentType": "period",
@@ -2091,6 +2189,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12672,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "بصلاتك تسمو روحك",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-734.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
