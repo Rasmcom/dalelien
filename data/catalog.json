@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-08-27T11:09:58.137Z",
-  "lastSync": "2026-08-27T11:09:58.137Z",
+  "lastAttempt": "2026-08-28T12:43:19.693Z",
+  "lastSync": "2026-08-28T12:43:19.693Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -103,6 +103,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering221.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/221"
+    },
+    {
+      "sourceId": 12676,
+      "categoryId": 221,
+      "contentType": "field",
+      "title": "برنامج محاكاة نموذج الأمم المتحدة",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/modelunitednationsprogram-221.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/221"
     },
@@ -457,6 +471,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
     {
+      "sourceId": 12664,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الخامس - الإرث والأمجاد",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-5weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
       "sourceId": 12663,
       "categoryId": 711,
       "contentType": "period",
@@ -649,6 +677,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering222.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
+    },
+    {
+      "sourceId": 12673,
+      "categoryId": 222,
+      "contentType": "field",
+      "title": "برنامج محاكاة نموذج الأمم المتحدة",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/modelunitednationsprogram-222.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
     },
@@ -1227,6 +1269,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
     },
     {
+      "sourceId": 12674,
+      "categoryId": 223,
+      "contentType": "field",
+      "title": "برنامج محاكاة نموذج الأمم المتحدة",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/modelunitednationsprogram-223.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
+    },
+    {
       "sourceId": 11057,
       "categoryId": 223,
       "contentType": "field",
@@ -1783,6 +1839,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering224.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
+    },
+    {
+      "sourceId": 12675,
+      "categoryId": 224,
+      "contentType": "field",
+      "title": "برنامج محاكاة نموذج الأمم المتحدة",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/modelunitednationsprogram-224.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
     },
