@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-01T06:13:26.913Z",
-  "lastSync": "2026-09-01T06:13:26.913Z",
+  "lastAttempt": "2026-09-02T05:46:21.285Z",
+  "lastSync": "2026-09-02T05:46:21.285Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -709,6 +709,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
     },
     {
+      "sourceId": 11054,
+      "categoryId": 222,
+      "contentType": "field",
+      "title": "قيمنا حياة- دليل المعلم",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-teacherguide222.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
+    },
+    {
       "sourceId": 11025,
       "categoryId": 222,
       "contentType": "field",
@@ -1297,6 +1311,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
     },
     {
+      "sourceId": 11056,
+      "categoryId": 223,
+      "contentType": "field",
+      "title": "قيمنا حياة- دليل المعلم",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-teacherguide223.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
+    },
+    {
       "sourceId": 11027,
       "categoryId": 223,
       "contentType": "field",
@@ -1867,6 +1895,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentguide224.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
+    },
+    {
+      "sourceId": 11058,
+      "categoryId": 224,
+      "contentType": "field",
+      "title": "قيمنا حياة- دليل المعلم",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-teacherguide224.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
     },
