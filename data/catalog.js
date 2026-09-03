@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-02T05:46:21.285Z",
-  "lastSync": "2026-09-02T05:46:21.285Z",
+  "lastAttempt": "2026-09-03T05:44:44.550Z",
+  "lastSync": "2026-09-03T05:44:44.550Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -513,6 +513,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/721"
     },
     {
+      "sourceId": 12681,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "الصلاة على وقتها",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
       "sourceId": 12641,
       "categoryId": 731,
       "contentType": "period",
@@ -537,6 +551,20 @@ window.IEN_CATALOG = {
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12677,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "صلاتي نبع القيم",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekpraying-731.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
@@ -1115,6 +1143,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/722"
     },
     {
+      "sourceId": 12682,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "الصلاة على وقتها",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
       "sourceId": 12642,
       "categoryId": 732,
       "contentType": "period",
@@ -1139,6 +1181,20 @@ window.IEN_CATALOG = {
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12678,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "صلاتي نبع القيم",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekpraying-732.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
@@ -1703,6 +1759,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/723"
     },
     {
+      "sourceId": 12683,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "الصلاة على وقتها",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
       "sourceId": 12643,
       "categoryId": 733,
       "contentType": "period",
@@ -1727,6 +1797,20 @@ window.IEN_CATALOG = {
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12679,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "صلاتي نبع القيم",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekpraying-733.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
@@ -2291,6 +2375,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/724"
     },
     {
+      "sourceId": 12684,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "الصلاة على وقتها",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
       "sourceId": 12644,
       "categoryId": 734,
       "contentType": "period",
@@ -2315,6 +2413,20 @@ window.IEN_CATALOG = {
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12680,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "صلاتي نبع القيم",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekpraying-734.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
