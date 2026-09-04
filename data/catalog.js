@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-03T05:44:44.550Z",
-  "lastSync": "2026-09-03T05:44:44.550Z",
+  "lastAttempt": "2026-09-04T05:50:26.897Z",
+  "lastSync": "2026-09-04T05:50:26.897Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -495,6 +495,20 @@ window.IEN_CATALOG = {
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12685,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السادس - الإرث والأمجاد",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-711.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
@@ -1129,6 +1143,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
+      "sourceId": 12686,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السادس - الإرث والأمجاد",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
       "sourceId": 12660,
       "categoryId": 722,
       "contentType": "period",
@@ -1745,6 +1773,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
+      "sourceId": 12687,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السادس - الإرث والأمجاد",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
       "sourceId": 12661,
       "categoryId": 723,
       "contentType": "period",
@@ -2357,6 +2399,20 @@ window.IEN_CATALOG = {
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12688,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السادس - الإرث والأمجاد",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-714.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
