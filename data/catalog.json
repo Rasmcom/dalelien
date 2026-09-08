@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-07T06:02:40.822Z",
-  "lastSync": "2026-09-07T06:02:40.822Z",
+  "lastAttempt": "2026-09-08T05:55:30.498Z",
+  "lastSync": "2026-09-08T05:55:30.498Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -495,6 +495,20 @@
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12689,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السابع - صانع الأثر",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekbroadcast-711.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
@@ -1143,6 +1157,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
+      "sourceId": 12690,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السابع - صانع الأثر",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
       "sourceId": 12686,
       "categoryId": 712,
       "contentType": "period",
@@ -1773,6 +1801,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
+      "sourceId": 12691,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السابع - صانع الأثر",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
       "sourceId": 12687,
       "categoryId": 713,
       "contentType": "period",
@@ -2399,6 +2441,20 @@
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12692,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع السابع - صانع الأثر",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-7weekbroadcast-714.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
