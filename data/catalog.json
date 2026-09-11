@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-10T05:55:55.052Z",
-  "lastSync": "2026-09-10T05:55:55.052Z",
+  "lastAttempt": "2026-09-11T05:55:23.975Z",
+  "lastSync": "2026-09-11T05:55:23.975Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -22,6 +22,20 @@
     }
   ],
   "items": [
+    {
+      "sourceId": 12705,
+      "categoryId": 111,
+      "contentType": "field",
+      "title": "الأمن السيبراني",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-111.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
+    },
     {
       "sourceId": 11035,
       "categoryId": 111,
@@ -103,6 +117,34 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering221.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/221"
+    },
+    {
+      "sourceId": 12701,
+      "categoryId": 221,
+      "contentType": "field",
+      "title": "برنامج إرث وطموح",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/legacyandambition-221.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/221"
+    },
+    {
+      "sourceId": 12693,
+      "categoryId": 221,
+      "contentType": "field",
+      "title": "برنامج ريادة الأعمال",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/entrepreneurship-221.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/221"
     },
@@ -611,6 +653,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
     {
+      "sourceId": 12697,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "لماذا أصلي",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
       "sourceId": 12652,
       "categoryId": 731,
       "contentType": "period",
@@ -651,6 +707,20 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekpraying-731.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12706,
+      "categoryId": 112,
+      "contentType": "field",
+      "title": "الأمن السيبراني",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-112.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
     {
       "sourceId": 11040,
@@ -733,6 +803,34 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering222.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
+    },
+    {
+      "sourceId": 12702,
+      "categoryId": 222,
+      "contentType": "field",
+      "title": "برنامج إرث وطموح",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/legacyandambition-222.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
+    },
+    {
+      "sourceId": 12694,
+      "categoryId": 222,
+      "contentType": "field",
+      "title": "برنامج ريادة الأعمال",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/entrepreneurship-222.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/222"
     },
@@ -1269,6 +1367,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
     {
+      "sourceId": 12698,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "لماذا أصلي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
       "sourceId": 12653,
       "categoryId": 732,
       "contentType": "period",
@@ -1309,6 +1421,20 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekpraying-732.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12707,
+      "categoryId": 113,
+      "contentType": "field",
+      "title": "الأمن السيبراني",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-113.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
     {
       "sourceId": 11045,
@@ -1391,6 +1517,34 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering223.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
+    },
+    {
+      "sourceId": 12703,
+      "categoryId": 223,
+      "contentType": "field",
+      "title": "برنامج إرث وطموح",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/legacyandambition-223.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
+    },
+    {
+      "sourceId": 12695,
+      "categoryId": 223,
+      "contentType": "field",
+      "title": "برنامج ريادة الأعمال",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/entrepreneurship-223.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/223"
     },
@@ -1913,6 +2067,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
     {
+      "sourceId": 12699,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "لماذا أصلي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
       "sourceId": 12654,
       "categoryId": 733,
       "contentType": "period",
@@ -1953,6 +2121,20 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-4weekpraying-733.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12708,
+      "categoryId": 114,
+      "contentType": "field",
+      "title": "الأمن السيبراني",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-114.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
     },
     {
       "sourceId": 11050,
@@ -2035,6 +2217,34 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/citizenshipandlife-studentvolunteering224.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
+    },
+    {
+      "sourceId": 12704,
+      "categoryId": 224,
+      "contentType": "field",
+      "title": "برنامج إرث وطموح",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/legacyandambition-224.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
+    },
+    {
+      "sourceId": 12696,
+      "categoryId": 224,
+      "contentType": "field",
+      "title": "برنامج ريادة الأعمال",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "المواطنة والحياة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/entrepreneurship-224.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/224"
     },
@@ -2553,6 +2763,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-2weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12700,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "لماذا أصلي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekpraying-734.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
