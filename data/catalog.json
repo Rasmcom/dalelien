@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-13T06:05:02.788Z",
-  "lastSync": "2026-09-13T06:05:02.788Z",
+  "lastAttempt": "2026-09-14T06:12:15.530Z",
+  "lastSync": "2026-09-14T06:12:15.530Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -33,6 +33,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-111.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
+    },
+    {
+      "sourceId": 12715,
+      "categoryId": 111,
+      "contentType": "field",
+      "title": "البحث العلمي",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
     },
@@ -75,6 +89,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-111.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
+    },
+    {
+      "sourceId": 12719,
+      "categoryId": 111,
+      "contentType": "field",
+      "title": "حوكمة البيانات",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
     },
@@ -219,6 +247,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
     },
     {
+      "sourceId": 12709,
+      "categoryId": 331,
+      "contentType": "field",
+      "title": "الحرف والمهن",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/craftsandprofessions-331.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
+    },
+    {
       "sourceId": 12314,
       "categoryId": 331,
       "contentType": "field",
@@ -243,6 +285,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/theatricalarts-331.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
+    },
+    {
+      "sourceId": 12713,
+      "categoryId": 331,
+      "contentType": "field",
+      "title": "الكتابة الإبداعية والأدبية",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/creativeandliterarywriting-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
     },
@@ -723,6 +779,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
     {
+      "sourceId": 12716,
+      "categoryId": 112,
+      "contentType": "field",
+      "title": "البحث العلمي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-112.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
+    },
+    {
       "sourceId": 11040,
       "categoryId": 112,
       "contentType": "field",
@@ -761,6 +831,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-112.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
+    },
+    {
+      "sourceId": 12720,
+      "categoryId": 112,
+      "contentType": "field",
+      "title": "حوكمة البيانات",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-112.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
@@ -929,6 +1013,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mediaculture-332.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
+    },
+    {
+      "sourceId": 12710,
+      "categoryId": 332,
+      "contentType": "field",
+      "title": "الحرف والمهن",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/craftsandprofessions-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
     },
@@ -1437,6 +1535,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
     {
+      "sourceId": 12717,
+      "categoryId": 113,
+      "contentType": "field",
+      "title": "البحث العلمي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-113.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
+    },
+    {
       "sourceId": 11045,
       "categoryId": 113,
       "contentType": "field",
@@ -1475,6 +1587,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-113.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
+    },
+    {
+      "sourceId": 12721,
+      "categoryId": 113,
+      "contentType": "field",
+      "title": "حوكمة البيانات",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-113.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
@@ -1643,6 +1769,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/mediaculture-333.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
+    },
+    {
+      "sourceId": 12711,
+      "categoryId": 333,
+      "contentType": "field",
+      "title": "الحرف والمهن",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/craftsandprofessions-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
     },
@@ -2137,6 +2277,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
     },
     {
+      "sourceId": 12718,
+      "categoryId": 114,
+      "contentType": "field",
+      "title": "البحث العلمي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-114.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
+    },
+    {
       "sourceId": 11050,
       "categoryId": 114,
       "contentType": "field",
@@ -2347,6 +2501,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
     },
     {
+      "sourceId": 12712,
+      "categoryId": 334,
+      "contentType": "field",
+      "title": "الحرف والمهن",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/craftsandprofessions-334.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
+    },
+    {
       "sourceId": 12317,
       "categoryId": 334,
       "contentType": "field",
@@ -2371,6 +2539,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/theatricalarts-334.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
+    },
+    {
+      "sourceId": 12714,
+      "categoryId": 334,
+      "contentType": "field",
+      "title": "الكتابة الإبداعية والأدبية",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/creativeandliterarywriting-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
     },
