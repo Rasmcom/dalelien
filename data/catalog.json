@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-15T06:08:25.205Z",
-  "lastSync": "2026-09-15T06:08:25.205Z",
+  "lastAttempt": "2026-09-16T05:58:07.759Z",
+  "lastSync": "2026-09-16T05:58:07.759Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -1045,6 +1045,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
     },
     {
+      "sourceId": 12727,
+      "categoryId": 332,
+      "contentType": "field",
+      "title": "الخط العربي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/arabiccalligraphy-332.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
+    },
+    {
       "sourceId": 12315,
       "categoryId": 332,
       "contentType": "field",
@@ -1125,6 +1139,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/visualtales-332.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
+    },
+    {
+      "sourceId": 12730,
+      "categoryId": 332,
+      "contentType": "field",
+      "title": "مهارات اللغة والتواصل الثقافي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/lancrossculturalcommunicationskills-332.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/332"
     },
@@ -1815,6 +1843,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
     },
     {
+      "sourceId": 12728,
+      "categoryId": 333,
+      "contentType": "field",
+      "title": "الخط العربي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/arabiccalligraphy-333.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
+    },
+    {
       "sourceId": 12316,
       "categoryId": 333,
       "contentType": "field",
@@ -1895,6 +1937,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/visualtales-333.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
+    },
+    {
+      "sourceId": 12731,
+      "categoryId": 333,
+      "contentType": "field",
+      "title": "مهارات اللغة والتواصل الثقافي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/lancrossculturalcommunicationskills-333.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/333"
     },
@@ -2637,6 +2693,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/visualtales-334.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
+    },
+    {
+      "sourceId": 12732,
+      "categoryId": 334,
+      "contentType": "field",
+      "title": "مهارات اللغة والتواصل الثقافي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/lancrossculturalcommunicationskills-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
     },
