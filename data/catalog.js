@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-16T05:58:07.759Z",
-  "lastSync": "2026-09-16T05:58:07.759Z",
+  "lastAttempt": "2026-09-17T06:06:49.933Z",
+  "lastSync": "2026-09-17T06:06:49.933Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -32,7 +32,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-111.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-111-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
     },
@@ -46,7 +46,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-111.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-111-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
     },
@@ -102,7 +102,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-111.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-111-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
     },
@@ -257,6 +257,20 @@ window.IEN_CATALOG = {
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/craftsandprofessions-331.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
+    },
+    {
+      "sourceId": 12726,
+      "categoryId": 331,
+      "contentType": "field",
+      "title": "الخط العربي",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/arabiccalligraphy-331.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/331"
     },
@@ -569,6 +583,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
     {
+      "sourceId": 12737,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثامن - مهارات المستقبل",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
       "sourceId": 12611,
       "categoryId": 711,
       "contentType": "period",
@@ -751,6 +779,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
     {
+      "sourceId": 12733,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "نخشع ليرتقي إيماننا",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
       "sourceId": 12623,
       "categoryId": 731,
       "contentType": "period",
@@ -788,7 +830,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-112.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-112-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
@@ -802,7 +844,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-112.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-112-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
@@ -858,7 +900,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-112.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-112-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
@@ -1367,6 +1409,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
+      "sourceId": 12738,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثامن - مهارات المستقبل",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
       "sourceId": 12616,
       "categoryId": 712,
       "contentType": "period",
@@ -1549,6 +1605,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
     {
+      "sourceId": 12734,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "نخشع ليرتقي إيماننا",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
       "sourceId": 12624,
       "categoryId": 732,
       "contentType": "period",
@@ -1586,7 +1656,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-113.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/cybersecurity-113-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
@@ -1600,7 +1670,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-113.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-113-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
@@ -1656,7 +1726,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-113.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-113-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
@@ -2151,6 +2221,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
+      "sourceId": 12739,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثامن - مهارات المستقبل",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
       "sourceId": 12621,
       "categoryId": 713,
       "contentType": "period",
@@ -2333,6 +2417,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
     {
+      "sourceId": 12735,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "نخشع ليرتقي إيماننا",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
       "sourceId": 12625,
       "categoryId": 733,
       "contentType": "period",
@@ -2384,7 +2482,7 @@ window.IEN_CATALOG = {
       "field": "العلوم والتقنية",
       "period": null,
       "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-114.pdf",
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scientificresearch-114-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
     },
@@ -2427,6 +2525,20 @@ window.IEN_CATALOG = {
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-114.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
+    },
+    {
+      "sourceId": 12722,
+      "categoryId": 114,
+      "contentType": "field",
+      "title": "حوكمة البيانات",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/datagovernance-114-v2.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
     },
@@ -2609,6 +2721,20 @@ window.IEN_CATALOG = {
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/craftsandprofessions-334.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
+    },
+    {
+      "sourceId": 12729,
+      "categoryId": 334,
+      "contentType": "field",
+      "title": "الخط العربي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الثقافة والفنون",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/arabiccalligraphy-334.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/334"
     },
@@ -2907,6 +3033,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
     {
+      "sourceId": 12740,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثامن - مهارات المستقبل",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
       "sourceId": 12622,
       "categoryId": 714,
       "contentType": "period",
@@ -3085,6 +3225,20 @@ window.IEN_CATALOG = {
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-5weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12736,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "نخشع ليرتقي إيماننا",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekpraying-734.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
