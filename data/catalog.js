@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-21T06:15:58.246Z",
-  "lastSync": "2026-09-21T06:15:58.246Z",
+  "lastAttempt": "2026-09-22T06:09:04.032Z",
+  "lastSync": "2026-09-22T06:09:04.032Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -625,6 +625,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
     {
+      "sourceId": 12769,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع التاسع - مهارات المستقبل",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
       "sourceId": 12633,
       "categoryId": 711,
       "contentType": "period",
@@ -719,6 +733,20 @@ window.IEN_CATALOG = {
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12773,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع العاشر- سفراء الاستدامة والوعي البيئي",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekbroadcast-711.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
@@ -1381,6 +1409,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/412"
     },
     {
+      "sourceId": 12762,
+      "categoryId": 512,
+      "contentType": "field",
+      "title": "الاسعافات الأولية",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/firstaid-512.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
+    },
+    {
       "sourceId": 12754,
       "categoryId": 512,
       "contentType": "field",
@@ -1521,6 +1563,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
+      "sourceId": 12770,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع التاسع - مهارات المستقبل",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
       "sourceId": 12636,
       "categoryId": 712,
       "contentType": "period",
@@ -1615,6 +1671,20 @@ window.IEN_CATALOG = {
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12774,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع العاشر- سفراء الاستدامة والوعي البيئي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekbroadcast-712.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
@@ -2277,6 +2347,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
     },
     {
+      "sourceId": 12755,
+      "categoryId": 513,
+      "contentType": "field",
+      "title": "برنامج مهارات الرياضة والترفيه الإلكتروني",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsanderecreationskillsprogram-513.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
+    },
+    {
       "sourceId": 12759,
       "categoryId": 513,
       "contentType": "field",
@@ -2403,6 +2487,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
+      "sourceId": 12771,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع التاسع - مهارات المستقبل",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
       "sourceId": 12639,
       "categoryId": 713,
       "contentType": "period",
@@ -2497,6 +2595,20 @@ window.IEN_CATALOG = {
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
+      "sourceId": 12775,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع العاشر- سفراء الاستدامة والوعي البيئي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekbroadcast-713.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
@@ -3159,6 +3271,34 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
     },
     {
+      "sourceId": 12756,
+      "categoryId": 514,
+      "contentType": "field",
+      "title": "برنامج مهارات الرياضة والترفيه الإلكتروني",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/sportsanderecreationskillsprogram-514.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
+    },
+    {
+      "sourceId": 12760,
+      "categoryId": 514,
+      "contentType": "field",
+      "title": "صحتي في بيئتي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/myhealthmyenvironment-514.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
+    },
+    {
       "sourceId": 11081,
       "categoryId": 514,
       "contentType": "field",
@@ -3271,6 +3411,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
     {
+      "sourceId": 12772,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع التاسع - مهارات المستقبل",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-9weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
       "sourceId": 12640,
       "categoryId": 714,
       "contentType": "period",
@@ -3365,6 +3519,20 @@ window.IEN_CATALOG = {
       "period": "الحضور والاصطفاف الصباحي",
       "periodId": 71,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-6weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12776,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع العاشر- سفراء الاستدامة والوعي البيئي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-10weekbroadcast-714.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
