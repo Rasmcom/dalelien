@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-22T06:09:04.032Z",
-  "lastSync": "2026-09-22T06:09:04.032Z",
+  "lastAttempt": "2026-09-23T05:55:08.425Z",
+  "lastSync": "2026-09-23T05:55:08.425Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -481,6 +481,20 @@ window.IEN_CATALOG = {
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/firstaid-511.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
+    },
+    {
+      "sourceId": 12782,
+      "categoryId": 511,
+      "contentType": "field",
+      "title": "اللياقة والصحة البدنية",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/fitnessandphysicalhealth-511.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
     },
@@ -1423,6 +1437,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
     },
     {
+      "sourceId": 12783,
+      "categoryId": 512,
+      "contentType": "field",
+      "title": "اللياقة والصحة البدنية",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/fitnessandphysicalhealth-512.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
+    },
+    {
       "sourceId": 12754,
       "categoryId": 512,
       "contentType": "field",
@@ -2347,6 +2375,20 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
     },
     {
+      "sourceId": 12784,
+      "categoryId": 513,
+      "contentType": "field",
+      "title": "اللياقة والصحة البدنية",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/fitnessandphysicalhealth-513.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
+    },
+    {
       "sourceId": 12755,
       "categoryId": 513,
       "contentType": "field",
@@ -3267,6 +3309,20 @@ window.IEN_CATALOG = {
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/firstaid-514.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
+    },
+    {
+      "sourceId": 12785,
+      "categoryId": 514,
+      "contentType": "field",
+      "title": "اللياقة والصحة البدنية",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الرياضة والصحة",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/fitnessandphysicalhealth-514.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
     },
