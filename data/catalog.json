@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-29T06:50:59.911Z",
-  "lastSync": "2026-09-29T06:50:59.911Z",
+  "lastAttempt": "2026-09-30T06:39:04.079Z",
+  "lastSync": "2026-09-30T06:39:04.079Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -65,6 +65,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
     },
     {
+      "sourceId": 12790,
+      "categoryId": 111,
+      "contentType": "field",
+      "title": "التصميم والابتكار التقني",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-111.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
+    },
+    {
       "sourceId": 11030,
       "categoryId": 111,
       "contentType": "field",
@@ -89,6 +103,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-111.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
+    },
+    {
+      "sourceId": 11037,
+      "categoryId": 111,
+      "contentType": "field",
+      "title": "تطبيقات ستيم",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-steam-111.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/111"
     },
@@ -989,6 +1017,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
     {
+      "sourceId": 12791,
+      "categoryId": 112,
+      "contentType": "field",
+      "title": "التصميم والابتكار التقني",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-112.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
+    },
+    {
       "sourceId": 11031,
       "categoryId": 112,
       "contentType": "field",
@@ -1013,6 +1055,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-112.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
+    },
+    {
+      "sourceId": 11042,
+      "categoryId": 112,
+      "contentType": "field",
+      "title": "تطبيقات ستيم",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-steam-112.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112"
     },
@@ -1941,6 +1997,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
     {
+      "sourceId": 12792,
+      "categoryId": 113,
+      "contentType": "field",
+      "title": "التصميم والابتكار التقني",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-113.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
+    },
+    {
       "sourceId": 11032,
       "categoryId": 113,
       "contentType": "field",
@@ -1965,6 +2035,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-113.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
+    },
+    {
+      "sourceId": 11047,
+      "categoryId": 113,
+      "contentType": "field",
+      "title": "تطبيقات ستيم",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-steam-113.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/113"
     },
@@ -2879,6 +2963,20 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
     },
     {
+      "sourceId": 12793,
+      "categoryId": 114,
+      "contentType": "field",
+      "title": "التصميم والابتكار التقني",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-technicalscientificdesigns-114.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
+    },
+    {
       "sourceId": 11033,
       "categoryId": 114,
       "contentType": "field",
@@ -2903,6 +3001,20 @@
       "period": null,
       "periodId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-iot-114.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
+    },
+    {
+      "sourceId": 11052,
+      "categoryId": 114,
+      "contentType": "field",
+      "title": "تطبيقات ستيم",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "العلوم والتقنية",
+      "period": null,
+      "periodId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/scienceandtechnology-steam-114.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/114"
     },
