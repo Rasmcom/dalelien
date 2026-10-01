@@ -1,10 +1,10 @@
 {
-  "attemptedAt": "2026-09-30T06:39:04.079Z",
+  "attemptedAt": "2026-10-01T07:09:27.139Z",
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
   "status": "ok",
-  "totalPdfGuides": 276,
-  "extracurricularPdfGuides": 92,
+  "totalPdfGuides": 284,
+  "extracurricularPdfGuides": 104,
   "succeeded": [
     {
       "categoryId": 111,
@@ -88,43 +88,43 @@
     },
     {
       "categoryId": 511,
-      "rawCount": 11,
-      "pdfCount": 11
+      "rawCount": 10,
+      "pdfCount": 10
     },
     {
       "categoryId": 512,
-      "rawCount": 11,
-      "pdfCount": 11
+      "rawCount": 10,
+      "pdfCount": 10
     },
     {
       "categoryId": 513,
-      "rawCount": 11,
-      "pdfCount": 11
+      "rawCount": 10,
+      "pdfCount": 10
     },
     {
       "categoryId": 514,
-      "rawCount": 11,
-      "pdfCount": 11
+      "rawCount": 10,
+      "pdfCount": 10
     },
     {
       "categoryId": 711,
-      "rawCount": 10,
-      "pdfCount": 10
+      "rawCount": 12,
+      "pdfCount": 12
     },
     {
       "categoryId": 712,
-      "rawCount": 10,
-      "pdfCount": 10
+      "rawCount": 12,
+      "pdfCount": 12
     },
     {
       "categoryId": 713,
-      "rawCount": 10,
-      "pdfCount": 10
+      "rawCount": 12,
+      "pdfCount": 12
     },
     {
       "categoryId": 714,
-      "rawCount": 10,
-      "pdfCount": 10
+      "rawCount": 12,
+      "pdfCount": 12
     },
     {
       "categoryId": 721,
@@ -148,23 +148,23 @@
     },
     {
       "categoryId": 731,
-      "rawCount": 12,
-      "pdfCount": 12
+      "rawCount": 13,
+      "pdfCount": 13
     },
     {
       "categoryId": 732,
-      "rawCount": 12,
-      "pdfCount": 12
+      "rawCount": 13,
+      "pdfCount": 13
     },
     {
       "categoryId": 733,
-      "rawCount": 12,
-      "pdfCount": 12
+      "rawCount": 13,
+      "pdfCount": 13
     },
     {
       "categoryId": 734,
-      "rawCount": 12,
-      "pdfCount": 12
+      "rawCount": 13,
+      "pdfCount": 13
     }
   ],
   "failed": []

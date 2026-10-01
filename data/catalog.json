@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-09-30T06:39:04.079Z",
-  "lastSync": "2026-09-30T06:39:04.079Z",
+  "lastAttempt": "2026-10-01T07:09:27.139Z",
+  "lastSync": "2026-10-01T07:09:27.139Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
@@ -583,20 +583,6 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
     },
     {
-      "sourceId": 11064,
-      "categoryId": 511,
-      "contentType": "field",
-      "title": "مهارات الرياضات الإلكترونية",
-      "stage": "الأولية",
-      "stageId": "lower",
-      "field": "الرياضة والصحة",
-      "period": null,
-      "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills511.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/511"
-    },
-    {
       "sourceId": 11060,
       "categoryId": 511,
       "contentType": "field",
@@ -723,6 +709,34 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
     {
+      "sourceId": 12798,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني عشر- كن واعيا",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-12weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12794,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الحادي عشر- كن واعيا",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-11weekbroadcast-711.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
       "sourceId": 12664,
       "categoryId": 711,
       "contentType": "period",
@@ -845,6 +859,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12802,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "بشروطها تتم صلاتي",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-13weekpraying-731.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
@@ -1563,20 +1591,6 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
     },
     {
-      "sourceId": 11070,
-      "categoryId": 512,
-      "contentType": "field",
-      "title": "مهارات الرياضات الإلكترونية",
-      "stage": "العليا",
-      "stageId": "upper",
-      "field": "الرياضة والصحة",
-      "period": null,
-      "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills512.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/512"
-    },
-    {
       "sourceId": 11066,
       "categoryId": 512,
       "contentType": "field",
@@ -1703,6 +1717,34 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
+      "sourceId": 12799,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني عشر- كن واعيا",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-12weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12795,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الحادي عشر- كن واعيا",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-11weekbroadcast-712.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
       "sourceId": 12665,
       "categoryId": 712,
       "contentType": "period",
@@ -1825,6 +1867,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12803,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "بشروطها تتم صلاتي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-13weekpraying-732.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
@@ -2529,20 +2585,6 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
     },
     {
-      "sourceId": 11076,
-      "categoryId": 513,
-      "contentType": "field",
-      "title": "مهارات الرياضات الإلكترونية",
-      "stage": "المتوسطة",
-      "stageId": "middle",
-      "field": "الرياضة والصحة",
-      "period": null,
-      "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills513.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/513"
-    },
-    {
       "sourceId": 11072,
       "categoryId": 513,
       "contentType": "field",
@@ -2669,6 +2711,34 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
+      "sourceId": 12800,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني عشر- كن واعيا",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-12weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
+      "sourceId": 12796,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الحادي عشر- كن واعيا",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-11weekbroadcast-713.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
       "sourceId": 12666,
       "categoryId": 713,
       "contentType": "period",
@@ -2791,6 +2861,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12804,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "بشروطها تتم صلاتي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-13weekpraying-733.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
@@ -3495,20 +3579,6 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
     },
     {
-      "sourceId": 11082,
-      "categoryId": 514,
-      "contentType": "field",
-      "title": "مهارات الرياضات الإلكترونية",
-      "stage": "الثانوية",
-      "stageId": "secondary",
-      "field": "الرياضة والصحة",
-      "period": null,
-      "periodId": null,
-      "pdfUrl": "https://iencontent.ien.edu.sa/books/electronicsportsskills514.pdf",
-      "thumbnail": "1",
-      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/514"
-    },
-    {
       "sourceId": 11078,
       "categoryId": 514,
       "contentType": "field",
@@ -3635,6 +3705,34 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
     {
+      "sourceId": 12801,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني عشر- كن واعيا",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-12weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12797,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الحادي عشر- كن واعيا",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-11weekbroadcast-714.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
       "sourceId": 12667,
       "categoryId": 714,
       "contentType": "period",
@@ -3757,6 +3855,20 @@
       "period": "صلاة الظهر والمناوبة",
       "periodId": 73,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-3weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12805,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "بشروطها تتم صلاتي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-13weekpraying-734.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
