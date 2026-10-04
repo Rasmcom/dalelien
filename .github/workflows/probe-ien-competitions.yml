@@ -17,11 +17,30 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Resolve IEN www endpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          if getent ahostsv4 www.ien.edu.sa >/dev/null 2>&1; then
+            echo "www.ien.edu.sa resolves normally."
+            exit 0
+          fi
+          mapfile -t IPS < <(getent ahostsv4 ien.edu.sa | awk '$2 == "STREAM" {print $1}' | sort -u)
+          [ "${#IPS[@]}" -gt 0 ] || { echo "No IPv4 addresses found for ien.edu.sa" >&2; exit 1; }
+          SELECTED=""
+          for ip in "${IPS[@]}"; do
+            code=$(curl --resolve "www.ien.edu.sa:443:${ip}" --connect-timeout 3 --max-time 8 -sS -o /dev/null -w '%{http_code}' 'https://www.ien.edu.sa/?choice=2#/generalactivities/8' || true)
+            if [[ "$code" =~ ^[23] ]]; then SELECTED="$ip"; break; fi
+          done
+          [ -n "$SELECTED" ] || { echo "Could not find a working IEN endpoint" >&2; exit 1; }
+          echo "$SELECTED www.ien.edu.sa" | sudo tee -a /etc/hosts
+
       - name: Probe official IEN API
         shell: bash
         run: |
-          node - <<'NODE'
-          const fs = require('fs');
+          node --input-type=module - <<'NODE'
+          import fs from 'node:fs';
           const api='https://www.ien.edu.sa/api/MediaContent/GetMediaContents';
           const ids=[8,81,82,83,84,85,811,812,813,814,821,822,823,824,831,832,833,834,841,842,843,844,851,852,853,854];
           const out=[];
@@ -29,19 +48,35 @@ jobs:
             try {
               const res=await fetch(api,{
                 method:'POST',
-                headers:{'content-type':'application/json;charset=UTF-8','accept':'application/json, text/plain, */*','referer':'https://www.ien.edu.sa/?choice=2#/generalactivities/8','user-agent':'Mozilla/5.0'},
-                body:JSON.stringify({CategoryId:id,StageId:'0'})
+                headers:{
+                  'content-type':'application/json;charset=UTF-8',
+                  'accept':'application/json, text/plain, */*',
+                  'referer':'https://www.ien.edu.sa/?choice=2#/generalactivities/8',
+                  'user-agent':'Mozilla/5.0'
+                },
+                body:JSON.stringify({CategoryId:id,StageId:'0'}),
+                signal:AbortSignal.timeout(20000)
               });
               const data=await res.json();
-              out.push({categoryId:id,status:res.status,count:Array.isArray(data)?data.length:null,items:Array.isArray(data)?data.slice(0,10).map(x=>({id:x.id,title:x.title,downloadUrl:x.downloadUrl,linkOrPath:x.linkOrPath})):data});
-            } catch (e) { out.push({categoryId:id,error:String(e)}); }
+              out.push({
+                categoryId:id,
+                status:res.status,
+                count:Array.isArray(data)?data.length:null,
+                items:Array.isArray(data)?data.slice(0,20).map(x=>({
+                  id:x.id,title:x.title,downloadUrl:x.downloadUrl,linkOrPath:x.linkOrPath,thumbnail:x.thumbnail
+                })):data
+              });
+            } catch (e) {
+              out.push({categoryId:id,error:String(e?.message||e)});
+            }
           }
           fs.writeFileSync('data/competition-probe.json',JSON.stringify(out,null,2));
           NODE
+
       - name: Commit probe
         run: |
           git config user.name "ien-probe-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/competition-probe.json
-          git commit -m "chore: probe IEN competition categories"
+          git diff --cached --quiet || git commit -m "chore: probe IEN competition categories"
           git push
