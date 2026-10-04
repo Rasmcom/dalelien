@@ -23,6 +23,12 @@ const FIELDS = [
   { id: 5, label: 'الرياضة والصحة', categories: [511, 512, 513, 514] }
 ];
 
+const OCCASION_FIELD = 'الأيام والمناسبات';
+const OCCASIONS = [
+  { id: 61, label: 'الأيام الوطنية', categories: [611, 612, 613, 614] },
+  { id: 62, label: 'الأيام العالمية', categories: [621, 622, 623, 624] }
+];
+
 const EXTRACURRICULAR_FIELD = 'الفترات اللاصفية';
 const PERIODS = [
   { id: 71, label: 'الحضور والاصطفاف الصباحي', categories: [711, 712, 713, 714] },
@@ -30,22 +36,54 @@ const PERIODS = [
   { id: 73, label: 'صلاة الظهر والمناوبة', categories: [731, 732, 733, 734] }
 ];
 
+const COMPETITION_FIELD = 'المسابقات';
+const COMPETITION_CATEGORY_ID = 811;
+
 const CATEGORY_MAP = new Map();
+
 for (const field of FIELDS) {
   field.categories.forEach((categoryId, index) => {
-    CATEGORY_MAP.set(categoryId, { kind: 'field', field, stage: STAGES[index], period: null });
+    CATEGORY_MAP.set(categoryId, {
+      kind: 'field',
+      field,
+      stage: STAGES[index],
+      period: null,
+      occasion: null
+    });
   });
 }
+
+for (const occasion of OCCASIONS) {
+  occasion.categories.forEach((categoryId, index) => {
+    CATEGORY_MAP.set(categoryId, {
+      kind: 'occasion',
+      field: { id: 6, label: OCCASION_FIELD },
+      stage: STAGES[index],
+      period: null,
+      occasion
+    });
+  });
+}
+
 for (const period of PERIODS) {
   period.categories.forEach((categoryId, index) => {
     CATEGORY_MAP.set(categoryId, {
       kind: 'period',
       field: { id: 7, label: EXTRACURRICULAR_FIELD },
       stage: STAGES[index],
-      period
+      period,
+      occasion: null
     });
   });
 }
+
+CATEGORY_MAP.set(COMPETITION_CATEGORY_ID, {
+  kind: 'competition',
+  field: { id: 8, label: COMPETITION_FIELD },
+  stage: null,
+  period: null,
+  occasion: null
+});
 
 const clean = value => String(value ?? '').replace(/\s+/g, ' ').trim();
 const isPdf = value => /\.pdf(?:$|[?#])/i.test(clean(value));
@@ -65,7 +103,7 @@ async function fetchCategory(categoryId) {
       'content-type': 'application/json;charset=UTF-8',
       'accept': 'application/json, text/plain, */*',
       'referer': SOURCE_URL,
-      'user-agent': 'Mozilla/5.0 (compatible; iendalel-sync/1.0)'
+      'user-agent': 'Mozilla/5.0 (compatible; dalelien-sync/1.0)'
     },
     body: JSON.stringify({ CategoryId: categoryId, StageId: '0' }),
     signal: AbortSignal.timeout(30000)
@@ -95,11 +133,13 @@ function normalizeItem(raw, categoryId) {
     categoryId,
     contentType: meta.kind,
     title,
-    stage: meta.stage.label,
-    stageId: meta.stage.id,
+    stage: meta.stage?.label || 'جميع المراحل',
+    stageId: meta.stage?.id || 'all',
     field: meta.field.label,
     period: meta.period?.label || null,
     periodId: meta.period?.id || null,
+    occasion: meta.occasion?.label || null,
+    occasionId: meta.occasion?.id || null,
     pdfUrl,
     thumbnail: clean(raw?.thumbnail) || null,
     sourceUrl: `https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/${categoryId}`
@@ -135,22 +175,39 @@ for (const categoryId of CATEGORY_MAP.keys()) {
 }
 
 const seen = new Set();
+const fieldOrder = field => {
+  const normal = FIELDS.findIndex(item => item.label === field);
+  if (normal >= 0) return normal;
+  if (field === OCCASION_FIELD) return FIELDS.length;
+  if (field === EXTRACURRICULAR_FIELD) return FIELDS.length + 1;
+  if (field === COMPETITION_FIELD) return FIELDS.length + 2;
+  return 999;
+};
+const stageOrder = stageId => {
+  const index = STAGES.findIndex(stage => stage.id === stageId);
+  return index >= 0 ? index : STAGES.length;
+};
+
 const items = merged.filter(item => {
   const key = `${item.categoryId}|${item.title}|${item.pdfUrl}`;
   if (seen.has(key)) return false;
   seen.add(key);
   return true;
 }).sort((a, b) => {
-  const stageOrder = STAGES.findIndex(stage => stage.id === a.stageId) - STAGES.findIndex(stage => stage.id === b.stageId);
-  if (stageOrder) return stageOrder;
+  const byStage = stageOrder(a.stageId) - stageOrder(b.stageId);
+  if (byStage) return byStage;
 
-  const fieldIndexA = a.field === EXTRACURRICULAR_FIELD ? FIELDS.length : FIELDS.findIndex(field => field.label === a.field);
-  const fieldIndexB = b.field === EXTRACURRICULAR_FIELD ? FIELDS.length : FIELDS.findIndex(field => field.label === b.field);
-  if (fieldIndexA !== fieldIndexB) return fieldIndexA - fieldIndexB;
+  const byField = fieldOrder(a.field) - fieldOrder(b.field);
+  if (byField) return byField;
+
+  if (a.field === OCCASION_FIELD && b.field === OCCASION_FIELD) {
+    const byOccasion = OCCASIONS.findIndex(item => item.label === a.occasion) - OCCASIONS.findIndex(item => item.label === b.occasion);
+    if (byOccasion) return byOccasion;
+  }
 
   if (a.field === EXTRACURRICULAR_FIELD && b.field === EXTRACURRICULAR_FIELD) {
-    const periodOrder = PERIODS.findIndex(period => period.label === a.period) - PERIODS.findIndex(period => period.label === b.period);
-    if (periodOrder) return periodOrder;
+    const byPeriod = PERIODS.findIndex(item => item.label === a.period) - PERIODS.findIndex(item => item.label === b.period);
+    if (byPeriod) return byPeriod;
   }
 
   return a.title.localeCompare(b.title, 'ar');
@@ -158,6 +215,7 @@ const items = merged.filter(item => {
 
 const allSucceeded = failed.length === 0 && succeeded.length === CATEGORY_MAP.size;
 const anySucceeded = succeeded.length > 0;
+
 const output = {
   source: SOURCE_URL,
   api: API_URL,
@@ -167,7 +225,9 @@ const output = {
   categoryCount: CATEGORY_MAP.size,
   syncedCategoryCount: succeeded.length,
   failedCategoryCount: failed.length,
+  occasionGroups: OCCASIONS.map(({ id, label }) => ({ id, label })),
   extracurricularPeriods: PERIODS.map(({ id, label }) => ({ id, label })),
+  competitionCategoryId: COMPETITION_CATEGORY_ID,
   items
 };
 
@@ -177,12 +237,14 @@ const diagnostics = {
   api: API_URL,
   status: output.syncStatus,
   totalPdfGuides: items.length,
+  occasionPdfGuides: items.filter(item => item.field === OCCASION_FIELD).length,
   extracurricularPdfGuides: items.filter(item => item.field === EXTRACURRICULAR_FIELD).length,
+  competitionPdfGuides: items.filter(item => item.field === COMPETITION_FIELD).length,
   succeeded,
   failed
 };
 
-const addonLoader = `\n(function(){\n  const load=()=>{\n    if(!document.querySelector('link[data-ien-extracurricular]')){\n      const css=document.createElement('link');css.rel='stylesheet';css.href='extracurricular.css?v=20260819-1';css.dataset.ienExtracurricular='1';document.head.appendChild(css);\n    }\n    if(!document.querySelector('script[data-ien-extracurricular]')){\n      const script=document.createElement('script');script.src='extracurricular.js?v=20260819-1';script.dataset.ienExtracurricular='1';document.body.appendChild(script);\n    }\n  };\n  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',load,{once:true}); else setTimeout(load,0);\n})();\n`;
+const addonLoader = `\n(function(){\n  const load=()=>{\n    if(!document.querySelector('link[data-ien-extracurricular]')){\n      const css=document.createElement('link');css.rel='stylesheet';css.href='extracurricular.css?v=20261004-1';css.dataset.ienExtracurricular='1';document.head.appendChild(css);\n    }\n    if(!document.querySelector('script[data-ien-extracurricular]')){\n      const script=document.createElement('script');script.src='extracurricular.js?v=20261004-1';script.dataset.ienExtracurricular='1';document.body.appendChild(script);\n    }\n  };\n  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',load,{once:true}); else setTimeout(load,0);\n})();\n`;
 
 await fs.mkdir(path.join(ROOT, 'data'), { recursive: true });
 await fs.writeFile(path.join(ROOT, 'data', 'catalog.json'), JSON.stringify(output, null, 2), 'utf8');
