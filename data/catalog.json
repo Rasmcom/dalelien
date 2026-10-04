@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-10-03T06:26:18.108Z",
-  "lastSync": "2026-10-03T06:26:18.108Z",
+  "lastAttempt": "2026-10-04T06:48:32.434Z",
+  "lastSync": "2026-10-04T06:48:32.434Z",
   "syncStatus": "ok",
   "categoryCount": 32,
   "syncedCategoryCount": 32,
