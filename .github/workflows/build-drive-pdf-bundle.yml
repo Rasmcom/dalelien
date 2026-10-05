@@ -9,84 +9,34 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: drive-pdf-bundle
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download official IEN PDFs
+      - name: Test one IEN PDF through resolved host
         shell: bash
         run: |
-          set -euo pipefail
+          set -x
           IP="20.74.132.239"
-          python - <<'PY'
-          import json, pathlib, re
-          data=json.load(open('data/catalog.json',encoding='utf-8'))
-          stage_map={'upper':'العليا','middle':'المتوسطة','secondary':'الثانوية'}
-          fields={'العلوم والتقنية','المواطنة والحياة','الثقافة والفنون','النشاط الكشفي','الرياضة والصحة','الأيام والمناسبات'}
-          seen=set()
-          rows=[]
-          for item in data.get('items',[]):
-              sid=item.get('stageId')
-              field=item.get('field')
-              url=item.get('pdfUrl')
-              if sid not in stage_map or field not in fields or not url: continue
-              key=(sid,url)
-              if key in seen: continue
-              seen.add(key)
-              title=re.sub(r'[\\/:*?"<>|]','-',str(item.get('title') or '')).strip()
-              if field=='الأيام والمناسبات' and item.get('occasion'):
-                  title=f"{item['occasion']} - {title}"
-              rows.append({'stage':stage_map[sid],'field':field,'title':title+'.pdf','url':url})
-          pathlib.Path('/tmp/manifest.json').write_text(json.dumps(rows,ensure_ascii=False),encoding='utf-8')
-          print('FILES',len(rows))
-          PY
-          rm -rf drive-pdf-bundle
-          mkdir -p drive-pdf-bundle
-          python - <<'PY'
-          import json, os, shlex
-          for x in json.load(open('/tmp/manifest.json',encoding='utf-8')):
-              print('\t'.join([x['stage'],x['field'],x['title'],x['url']]))
-          PY
-          > /tmp/manifest.tsv
-          python - <<'PY' > /tmp/manifest.tsv
-          import json
-          for x in json.load(open('/tmp/manifest.json',encoding='utf-8')):
-              print('\t'.join([x['stage'],x['field'],x['title'],x['url']]))
-          PY
-          total=0
-          failed=0
-          : > /tmp/errors.txt
-          while IFS=$'\t' read -r stage field title url; do
-            dir="drive-pdf-bundle/$stage/$field"
-            mkdir -p "$dir"
-            if curl --resolve "iencontent.ien.edu.sa:443:$IP" \
-              -L --fail --retry 2 --connect-timeout 10 --max-time 120 \
-              -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/138 Safari/537.36" \
-              -e "https://www.ien.edu.sa/?choice=2#/generalactivities/" \
-              -sS -o "$dir/$title" "$url"; then
-              bytes=$(stat -c%s "$dir/$title")
-              if [ "$bytes" -lt 1000 ]; then
-                echo "TOO_SMALL $url" | tee -a /tmp/errors.txt
-                rm -f "$dir/$title"
-                failed=$((failed+1))
-              else
-                total=$((total+1))
-                echo "OK $total $stage / $field / $title"
-              fi
-            else
-              echo "FAILED $url" | tee -a /tmp/errors.txt
-              failed=$((failed+1))
-            fi
-          done < /tmp/manifest.tsv
-          printf '{"downloaded":%s,"failed":%s}\n' "$total" "$failed" > drive-pdf-bundle/_manifest.json
-          echo "Downloaded $total; failed $failed"
-          if [ "$failed" -gt 0 ]; then cat /tmp/errors.txt; exit 1; fi
-      - name: Upload bundle artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: activity-pdfs-drive-bundle
-          path: drive-pdf-bundle/
-          if-no-files-found: error
-          retention-days: 1
+          curl --resolve "iencontent.ien.edu.sa:443:$IP" \
+            --http1.1 -L --fail --connect-timeout 8 --max-time 30 \
+            -H 'Accept: application/pdf,application/octet-stream;q=0.9,*/*;q=0.8' \
+            -H 'Accept-Language: ar-SA,ar;q=0.9,en;q=0.8' \
+            -H 'Cache-Control: no-cache' \
+            -H 'Pragma: no-cache' \
+            -H 'Sec-Fetch-Dest: document' \
+            -H 'Sec-Fetch-Mode: navigate' \
+            -H 'Sec-Fetch-Site: same-site' \
+            -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36' \
+            -e 'https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/112' \
+            -D /tmp/headers.txt \
+            -o /tmp/test.pdf \
+            'https://iencontent.ien.edu.sa/books/cybersecurity-112-v2.pdf'
+          cat /tmp/headers.txt
+          ls -lh /tmp/test.pdf
+          file /tmp/test.pdf
