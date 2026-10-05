@@ -1,0 +1,76 @@
+name: Build Drive PDF bundle
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-drive-pdf-bundle.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Download official IEN PDFs
+        shell: bash
+        run: |
+          node --input-type=module - <<'NODE'
+          import fs from 'node:fs/promises';
+          import path from 'node:path';
+
+          const catalog=JSON.parse(await fs.readFile('data/catalog.json','utf8'));
+          const stageMap={upper:'العليا',middle:'المتوسطة',secondary:'الثانوية'};
+          const fields=new Set(['العلوم والتقنية','المواطنة والحياة','الثقافة والفنون','النشاط الكشفي','الرياضة والصحة','الأيام والمناسبات']);
+          const root='drive-pdf-bundle';
+          await fs.rm(root,{recursive:true,force:true});
+          await fs.mkdir(root,{recursive:true});
+
+          const seen=new Set();
+          const errors=[];
+          let count=0;
+          const clean=s=>String(s||'').replace(/[\\/:*?"<>|]/g,'-').replace(/\s+/g,' ').trim();
+
+          for(const item of catalog.items||[]){
+            if(!stageMap[item.stageId]||!fields.has(item.field)||!item.pdfUrl) continue;
+            const uniqueKey=`${item.stageId}|${item.pdfUrl}`;
+            if(seen.has(uniqueKey)) continue;
+            seen.add(uniqueKey);
+
+            let title=clean(item.title);
+            if(item.field==='الأيام والمناسبات'&&item.occasion) title=`${clean(item.occasion)} - ${title}`;
+            const dir=path.join(root,stageMap[item.stageId],item.field);
+            await fs.mkdir(dir,{recursive:true});
+            const dest=path.join(dir,`${title}.pdf`);
+
+            try{
+              const response=await fetch(item.pdfUrl,{signal:AbortSignal.timeout(60000)});
+              if(!response.ok) throw new Error(`HTTP ${response.status}`);
+              const buffer=Buffer.from(await response.arrayBuffer());
+              if(buffer.length<1000) throw new Error('PDF too small');
+              await fs.writeFile(dest,buffer);
+              count++;
+              console.log(`OK ${count}: ${dest}`);
+            }catch(error){
+              errors.push({stage:item.stageId,field:item.field,title:item.title,url:item.pdfUrl,error:String(error?.message||error)});
+              console.error('FAILED',item.pdfUrl,error);
+            }
+          }
+
+          await fs.writeFile(path.join(root,'_manifest.json'),JSON.stringify({downloaded:count,failed:errors.length,errors},null,2));
+          console.log(`Downloaded ${count}; failed ${errors.length}`);
+          if(errors.length) process.exitCode=1;
+          NODE
+      - name: Upload bundle artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: activity-pdfs-drive-bundle
+          path: drive-pdf-bundle/
+          if-no-files-found: error
+          retention-days: 1
