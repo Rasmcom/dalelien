@@ -1,0 +1,27 @@
+name: Test PDF handoff
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/test-pdf-handoff.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download one official IEN PDF
+        run: |
+          mkdir -p out
+          curl -L --fail --retry 3 --connect-timeout 15 -o "out/test.pdf" "https://iencontent.ien.edu.sa/books/cybersecurity-112-v2.pdf"
+          file "out/test.pdf"
+          test -s "out/test.pdf"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ien-test-pdf
+          path: out/test.pdf
+          compression-level: 0
