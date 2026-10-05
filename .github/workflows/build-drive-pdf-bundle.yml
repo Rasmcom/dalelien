@@ -14,58 +14,74 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
       - name: Download official IEN PDFs
         shell: bash
         run: |
-          node --input-type=module - <<'NODE'
-          import fs from 'node:fs/promises';
-          import path from 'node:path';
-
-          const catalog=JSON.parse(await fs.readFile('data/catalog.json','utf8'));
-          const stageMap={upper:'العليا',middle:'المتوسطة',secondary:'الثانوية'};
-          const fields=new Set(['العلوم والتقنية','المواطنة والحياة','الثقافة والفنون','النشاط الكشفي','الرياضة والصحة','الأيام والمناسبات']);
-          const root='drive-pdf-bundle';
-          await fs.rm(root,{recursive:true,force:true});
-          await fs.mkdir(root,{recursive:true});
-
-          const seen=new Set();
-          const errors=[];
-          let count=0;
-          const clean=s=>String(s||'').replace(/[\\/:*?"<>|]/g,'-').replace(/\s+/g,' ').trim();
-
-          for(const item of catalog.items||[]){
-            if(!stageMap[item.stageId]||!fields.has(item.field)||!item.pdfUrl) continue;
-            const uniqueKey=`${item.stageId}|${item.pdfUrl}`;
-            if(seen.has(uniqueKey)) continue;
-            seen.add(uniqueKey);
-
-            let title=clean(item.title);
-            if(item.field==='الأيام والمناسبات'&&item.occasion) title=`${clean(item.occasion)} - ${title}`;
-            const dir=path.join(root,stageMap[item.stageId],item.field);
-            await fs.mkdir(dir,{recursive:true});
-            const dest=path.join(dir,`${title}.pdf`);
-
-            try{
-              const response=await fetch(item.pdfUrl,{signal:AbortSignal.timeout(60000)});
-              if(!response.ok) throw new Error(`HTTP ${response.status}`);
-              const buffer=Buffer.from(await response.arrayBuffer());
-              if(buffer.length<1000) throw new Error('PDF too small');
-              await fs.writeFile(dest,buffer);
-              count++;
-              console.log(`OK ${count}: ${dest}`);
-            }catch(error){
-              errors.push({stage:item.stageId,field:item.field,title:item.title,url:item.pdfUrl,error:String(error?.message||error)});
-              console.error('FAILED',item.pdfUrl,error);
-            }
-          }
-
-          await fs.writeFile(path.join(root,'_manifest.json'),JSON.stringify({downloaded:count,failed:errors.length,errors},null,2));
-          console.log(`Downloaded ${count}; failed ${errors.length}`);
-          if(errors.length) process.exitCode=1;
-          NODE
+          set -euo pipefail
+          IP="20.74.132.239"
+          python - <<'PY'
+          import json, pathlib, re
+          data=json.load(open('data/catalog.json',encoding='utf-8'))
+          stage_map={'upper':'العليا','middle':'المتوسطة','secondary':'الثانوية'}
+          fields={'العلوم والتقنية','المواطنة والحياة','الثقافة والفنون','النشاط الكشفي','الرياضة والصحة','الأيام والمناسبات'}
+          seen=set()
+          rows=[]
+          for item in data.get('items',[]):
+              sid=item.get('stageId')
+              field=item.get('field')
+              url=item.get('pdfUrl')
+              if sid not in stage_map or field not in fields or not url: continue
+              key=(sid,url)
+              if key in seen: continue
+              seen.add(key)
+              title=re.sub(r'[\\/:*?"<>|]','-',str(item.get('title') or '')).strip()
+              if field=='الأيام والمناسبات' and item.get('occasion'):
+                  title=f"{item['occasion']} - {title}"
+              rows.append({'stage':stage_map[sid],'field':field,'title':title+'.pdf','url':url})
+          pathlib.Path('/tmp/manifest.json').write_text(json.dumps(rows,ensure_ascii=False),encoding='utf-8')
+          print('FILES',len(rows))
+          PY
+          rm -rf drive-pdf-bundle
+          mkdir -p drive-pdf-bundle
+          python - <<'PY'
+          import json, os, shlex
+          for x in json.load(open('/tmp/manifest.json',encoding='utf-8')):
+              print('\t'.join([x['stage'],x['field'],x['title'],x['url']]))
+          PY
+          > /tmp/manifest.tsv
+          python - <<'PY' > /tmp/manifest.tsv
+          import json
+          for x in json.load(open('/tmp/manifest.json',encoding='utf-8')):
+              print('\t'.join([x['stage'],x['field'],x['title'],x['url']]))
+          PY
+          total=0
+          failed=0
+          : > /tmp/errors.txt
+          while IFS=$'\t' read -r stage field title url; do
+            dir="drive-pdf-bundle/$stage/$field"
+            mkdir -p "$dir"
+            if curl --resolve "iencontent.ien.edu.sa:443:$IP" \
+              -L --fail --retry 2 --connect-timeout 10 --max-time 120 \
+              -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/138 Safari/537.36" \
+              -e "https://www.ien.edu.sa/?choice=2#/generalactivities/" \
+              -sS -o "$dir/$title" "$url"; then
+              bytes=$(stat -c%s "$dir/$title")
+              if [ "$bytes" -lt 1000 ]; then
+                echo "TOO_SMALL $url" | tee -a /tmp/errors.txt
+                rm -f "$dir/$title"
+                failed=$((failed+1))
+              else
+                total=$((total+1))
+                echo "OK $total $stage / $field / $title"
+              fi
+            else
+              echo "FAILED $url" | tee -a /tmp/errors.txt
+              failed=$((failed+1))
+            fi
+          done < /tmp/manifest.tsv
+          printf '{"downloaded":%s,"failed":%s}\n' "$total" "$failed" > drive-pdf-bundle/_manifest.json
+          echo "Downloaded $total; failed $failed"
+          if [ "$failed" -gt 0 ]; then cat /tmp/errors.txt; exit 1; fi
       - name: Upload bundle artifact
         if: always()
         uses: actions/upload-artifact@v4
