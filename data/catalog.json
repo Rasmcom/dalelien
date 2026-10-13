@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-10-12T07:18:10.435Z",
-  "lastSync": "2026-10-12T07:18:10.435Z",
+  "lastAttempt": "2026-10-13T07:39:46.952Z",
+  "lastSync": "2026-10-13T07:39:46.952Z",
   "syncStatus": "ok",
   "categoryCount": 41,
   "syncedCategoryCount": 41,
@@ -752,6 +752,22 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/nationaldays-611.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/611"
+    },
+    {
+      "sourceId": 11216,
+      "categoryId": 621,
+      "contentType": "occasion",
+      "title": "اليوم العالمي للطفل",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الأيام والمناسبات",
+      "period": null,
+      "periodId": null,
+      "occasion": "الأيام العالمية",
+      "occasionId": 62,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/worldchildrenday-621.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/621"
     },
     {
       "sourceId": 11196,
@@ -2032,6 +2048,22 @@
       "pdfUrl": "https://iencontent.ien.edu.sa/books/nationaldays-612.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/612"
+    },
+    {
+      "sourceId": 11217,
+      "categoryId": 622,
+      "contentType": "occasion",
+      "title": "اليوم العالمي للطفل",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الأيام والمناسبات",
+      "period": null,
+      "periodId": null,
+      "occasion": "الأيام العالمية",
+      "occasionId": 62,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/worldchildrenday-622.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/622"
     },
     {
       "sourceId": 11197,
