@@ -1,8 +1,8 @@
 {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-10-13T07:39:46.952Z",
-  "lastSync": "2026-10-13T07:39:46.952Z",
+  "lastAttempt": "2026-10-14T06:06:06.951Z",
+  "lastSync": "2026-10-14T06:06:06.951Z",
   "syncStatus": "ok",
   "categoryCount": 41,
   "syncedCategoryCount": 41,
@@ -1118,6 +1118,22 @@
       "occasion": null,
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-14weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12832,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "بالواجبات تتم صلاتي",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-16weekpraying-731.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
@@ -2418,6 +2434,22 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
     {
+      "sourceId": 12833,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "بالواجبات تتم صلاتي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-16weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
       "sourceId": 12803,
       "categoryId": 732,
       "contentType": "period",
@@ -3682,6 +3714,22 @@
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
     {
+      "sourceId": 12834,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "بالواجبات تتم صلاتي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-16weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
       "sourceId": 12804,
       "categoryId": 733,
       "contentType": "period",
@@ -4942,6 +4990,22 @@
       "occasion": null,
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-14weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12835,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "بالواجبات تتم صلاتي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-16weekpraying-734.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
