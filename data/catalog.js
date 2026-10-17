@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-10-16T05:48:02.713Z",
-  "lastSync": "2026-10-16T05:48:02.713Z",
+  "lastAttempt": "2026-10-17T05:33:05.000Z",
+  "lastSync": "2026-10-17T05:33:05.000Z",
   "syncStatus": "ok",
   "categoryCount": 41,
   "syncedCategoryCount": 41,
