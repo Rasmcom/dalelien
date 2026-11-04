@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-11-03T07:52:37.891Z",
-  "lastSync": "2026-11-03T07:52:37.891Z",
+  "lastAttempt": "2026-11-04T07:28:01.898Z",
+  "lastSync": "2026-11-04T07:28:01.898Z",
   "syncStatus": "ok",
   "categoryCount": 41,
   "syncedCategoryCount": 41,
@@ -770,6 +770,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/621"
     },
     {
+      "sourceId": 11242,
+      "categoryId": 621,
+      "contentType": "occasion",
+      "title": "يوم الإعاقة",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الأيام والمناسبات",
+      "period": null,
+      "periodId": null,
+      "occasion": "الأيام العالمية",
+      "occasionId": 62,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/disabilityday-621.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/621"
+    },
+    {
       "sourceId": 11196,
       "categoryId": 621,
       "contentType": "occasion",
@@ -1106,6 +1122,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
     {
+      "sourceId": 12848,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "الأسبوع الثالث - الفصل الدراسي الثاني",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-19weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
       "sourceId": 12844,
       "categoryId": 731,
       "contentType": "period",
@@ -1118,6 +1150,22 @@ window.IEN_CATALOG = {
       "occasion": null,
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekpraying-731.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
+    },
+    {
+      "sourceId": 12852,
+      "categoryId": 731,
+      "contentType": "period",
+      "title": "الأسبوع الرابع - الفصل الدراسي الثاني",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-20weekpraying-731.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/731"
     },
@@ -2130,6 +2178,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/622"
     },
     {
+      "sourceId": 11243,
+      "categoryId": 622,
+      "contentType": "occasion",
+      "title": "يوم الإعاقة",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الأيام والمناسبات",
+      "period": null,
+      "periodId": null,
+      "occasion": "الأيام العالمية",
+      "occasionId": 62,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/disabilityday-622.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/622"
+    },
+    {
       "sourceId": 11197,
       "categoryId": 622,
       "contentType": "occasion",
@@ -2466,6 +2530,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
     {
+      "sourceId": 12849,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "الأسبوع الثالث - الفصل الدراسي الثاني",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-19weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
       "sourceId": 12845,
       "categoryId": 732,
       "contentType": "period",
@@ -2478,6 +2558,22 @@ window.IEN_CATALOG = {
       "occasion": null,
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekpraying-732.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
+    },
+    {
+      "sourceId": 12853,
+      "categoryId": 732,
+      "contentType": "period",
+      "title": "الأسبوع الرابع - الفصل الدراسي الثاني",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-20weekpraying-732.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/732"
     },
@@ -3458,6 +3554,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/613"
     },
     {
+      "sourceId": 11244,
+      "categoryId": 623,
+      "contentType": "occasion",
+      "title": "يوم الإعاقة",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الأيام والمناسبات",
+      "period": null,
+      "periodId": null,
+      "occasion": "الأيام العالمية",
+      "occasionId": 62,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/disabilityday-623.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/623"
+    },
+    {
       "sourceId": 11198,
       "categoryId": 623,
       "contentType": "occasion",
@@ -3794,6 +3906,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
     {
+      "sourceId": 12850,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "الأسبوع الثالث - الفصل الدراسي الثاني",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-19weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
       "sourceId": 12846,
       "categoryId": 733,
       "contentType": "period",
@@ -3806,6 +3934,22 @@ window.IEN_CATALOG = {
       "occasion": null,
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekpraying-733.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
+    },
+    {
+      "sourceId": 12854,
+      "categoryId": 733,
+      "contentType": "period",
+      "title": "الأسبوع الرابع - الفصل الدراسي الثاني",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-20weekpraying-733.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/733"
     },
@@ -4786,6 +4930,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/614"
     },
     {
+      "sourceId": 11245,
+      "categoryId": 624,
+      "contentType": "occasion",
+      "title": "يوم الإعاقة",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الأيام والمناسبات",
+      "period": null,
+      "periodId": null,
+      "occasion": "الأيام العالمية",
+      "occasionId": 62,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/disabilityday-624.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/624"
+    },
+    {
       "sourceId": 11199,
       "categoryId": 624,
       "contentType": "occasion",
@@ -5122,6 +5282,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
     {
+      "sourceId": 12851,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "الأسبوع الثالث - الفصل الدراسي الثاني",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-19weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
       "sourceId": 12847,
       "categoryId": 734,
       "contentType": "period",
@@ -5134,6 +5310,22 @@ window.IEN_CATALOG = {
       "occasion": null,
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekpraying-734.pdf",
+      "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
+    },
+    {
+      "sourceId": 12855,
+      "categoryId": 734,
+      "contentType": "period",
+      "title": "الأسبوع الرابع - الفصل الدراسي الثاني",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "صلاة الظهر والمناوبة",
+      "periodId": 73,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-20weekpraying-734.pdf",
       "thumbnail": "1",
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/734"
     },
