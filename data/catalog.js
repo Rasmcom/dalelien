@@ -1,8 +1,8 @@
 window.IEN_CATALOG = {
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "lastAttempt": "2026-11-19T08:42:40.001Z",
-  "lastSync": "2026-11-19T08:42:40.001Z",
+  "lastAttempt": "2026-11-20T08:28:20.398Z",
+  "lastSync": "2026-11-20T08:28:20.398Z",
   "syncStatus": "ok",
   "categoryCount": 41,
   "syncedCategoryCount": 41,
@@ -850,6 +850,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/621"
     },
     {
+      "sourceId": 12856,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - الفصل الدراسي الثاني - حياكم",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-17weekbroadcast-711.pdf",
+      "thumbnail": null,
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
       "sourceId": 12607,
       "categoryId": 711,
       "contentType": "period",
@@ -927,6 +943,22 @@ window.IEN_CATALOG = {
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-711.pdf",
       "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
+    },
+    {
+      "sourceId": 12857,
+      "categoryId": 711,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - الفصل الدراسي الثاني - النادي الثقافي",
+      "stage": "الأولية",
+      "stageId": "lower",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekbroadcast-711.pdf",
+      "thumbnail": null,
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/711"
     },
     {
@@ -2322,6 +2354,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/622"
     },
     {
+      "sourceId": 12863,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - الفصل الدراسي الثاني - حياكم",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-17weekbroadcast-712.pdf",
+      "thumbnail": null,
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
       "sourceId": 12608,
       "categoryId": 712,
       "contentType": "period",
@@ -2399,6 +2447,22 @@ window.IEN_CATALOG = {
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-712.pdf",
       "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
+    },
+    {
+      "sourceId": 12864,
+      "categoryId": 712,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - الفصل الدراسي الثاني - النادي الثقافي",
+      "stage": "العليا",
+      "stageId": "upper",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekbroadcast-712.pdf",
+      "thumbnail": null,
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/712"
     },
     {
@@ -3762,6 +3826,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/623"
     },
     {
+      "sourceId": 12870,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - الفصل الدراسي الثاني - حياكم",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-17weekbroadcast-713.pdf",
+      "thumbnail": null,
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
       "sourceId": 12609,
       "categoryId": 713,
       "contentType": "period",
@@ -3839,6 +3919,22 @@ window.IEN_CATALOG = {
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-713.pdf",
       "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
+    },
+    {
+      "sourceId": 12871,
+      "categoryId": 713,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - الفصل الدراسي الثاني - النادي الثقافي",
+      "stage": "المتوسطة",
+      "stageId": "middle",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekbroadcast-713.pdf",
+      "thumbnail": null,
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/713"
     },
     {
@@ -5202,6 +5298,22 @@ window.IEN_CATALOG = {
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/624"
     },
     {
+      "sourceId": 12877,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الأول - الفصل الدراسي الثاني - حياكم",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-17weekbroadcast-714.pdf",
+      "thumbnail": null,
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
       "sourceId": 12610,
       "categoryId": 714,
       "contentType": "period",
@@ -5279,6 +5391,22 @@ window.IEN_CATALOG = {
       "occasionId": null,
       "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-8weekbroadcast-714.pdf",
       "thumbnail": "1",
+      "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
+    },
+    {
+      "sourceId": 12878,
+      "categoryId": 714,
+      "contentType": "period",
+      "title": "إذاعة الأسبوع الثاني - الفصل الدراسي الثاني - النادي الثقافي",
+      "stage": "الثانوية",
+      "stageId": "secondary",
+      "field": "الفترات اللاصفية",
+      "period": "الحضور والاصطفاف الصباحي",
+      "periodId": 71,
+      "occasion": null,
+      "occasionId": null,
+      "pdfUrl": "https://iencontent.ien.edu.sa/books/1448-18weekbroadcast-714.pdf",
+      "thumbnail": null,
       "sourceUrl": "https://www.ien.edu.sa/?choice=2#/generalactivitiespackages/714"
     },
     {
