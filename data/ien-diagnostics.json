@@ -1,8 +1,8 @@
 {
-  "attemptedAt": "2026-11-24T10:51:52.171Z",
+  "attemptedAt": "2026-11-25T09:46:47.917Z",
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "status": "partial",
+  "status": "ok",
   "totalPdfGuides": 375,
   "occasionPdfGuides": 22,
   "extracurricularPdfGuides": 164,
@@ -14,7 +14,17 @@
       "pdfCount": 10
     },
     {
+      "categoryId": 112,
+      "rawCount": 10,
+      "pdfCount": 10
+    },
+    {
       "categoryId": 113,
+      "rawCount": 10,
+      "pdfCount": 10
+    },
+    {
+      "categoryId": 114,
       "rawCount": 10,
       "pdfCount": 10
     },
@@ -204,14 +214,5 @@
       "pdfCount": 5
     }
   ],
-  "failed": [
-    {
-      "categoryId": 112,
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "categoryId": 114,
-      "error": "The operation was aborted due to timeout"
-    }
-  ]
+  "failed": []
 }
