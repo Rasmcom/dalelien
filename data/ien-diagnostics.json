@@ -1,8 +1,8 @@
 {
-  "attemptedAt": "2026-11-26T09:27:21.506Z",
+  "attemptedAt": "2026-11-27T09:38:01.985Z",
   "source": "https://www.ien.edu.sa/?choice=2#/generalactivities/",
   "api": "https://www.ien.edu.sa/api/MediaContent/GetMediaContents",
-  "status": "partial",
+  "status": "ok",
   "totalPdfGuides": 375,
   "occasionPdfGuides": 22,
   "extracurricularPdfGuides": 164,
@@ -10,6 +10,11 @@
   "succeeded": [
     {
       "categoryId": 111,
+      "rawCount": 10,
+      "pdfCount": 10
+    },
+    {
+      "categoryId": 112,
       "rawCount": 10,
       "pdfCount": 10
     },
@@ -209,10 +214,5 @@
       "pdfCount": 5
     }
   ],
-  "failed": [
-    {
-      "categoryId": 112,
-      "error": "IEN API returned a non-array payload"
-    }
-  ]
+  "failed": []
 }
